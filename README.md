@@ -1,4 +1,4 @@
-# PredixSDKForSwift (Beta)
+# PredixSDKForiOS (Beta)
 
 The Predix SDK For Swift is a comprehensive suite of tools, frameworks and source examples that will enable you to build iOS and MacOS applications for the Industrial Internet of Things (IIoT).
 
@@ -9,6 +9,11 @@ The Predix SDK For Swift is a comprehensive suite of tools, frameworks and sourc
 - **Predix Time Series API**: Allows developers to access Predix Time Series data with rich data models
 - **Offline Data Synchronization API**: Gives developers the tools to develop offline first applications with seamless data syncing between an iOS application and Predix Cloud
 - **PredixUIKIt**: An open source collection of Predix UI components built specifically for iOS that work seamlessly with the Predix Mobile SDK to make it easy to display your data stored in Predix Cloud to the user with minimal coding.  For PredixUIKit information please visit https://github.com/PredixDev/PredixMobileUIKit
+
+## Supported Platforms and Targets
+
+- iOS
+- macOS
 
 ## Additional Information
 
