@@ -17,7 +17,7 @@ The Predix SDK For iOS is a comprehensive suite of tools, frameworks, and source
 
 ## Additional Information
 
-- For native Swift documentation specific to iOS/macOS see the [code documentation site](http://predixdev.github.io/PredixSDKForiOS)
+- For native Swift documentation specific to iOS/macOS see the [code documentation site](http://predixdev.github.io/PredixSDKForiOS/index.html)
 - [Feature documentation and Guides](https://github.com/PredixDev/PredixSDKForiOS/wiki)
 - [Getting started Guide](https://github.com/PredixDev/PredixSDKForiOS/wiki/Getting-Started)
 
