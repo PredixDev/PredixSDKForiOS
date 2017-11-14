@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="Structures  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          PredixSDK Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/PredixDev/PredixSDKForiOS">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">PredixSDK Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Structures  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AuthenticationHandler.html">AuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AuthenticationHandler/AuthenticateResult.html">– AuthenticateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AuthenticationManager.html">AuthenticationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AuthenticationManager/AuthenticationCompletionStatus.html">– AuthenticationCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DatabaseManager.html">DatabaseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FullTextSearch.html">FullTextSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/HybridOfflineAuthenticationHandler.html">HybridOfflineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MobileMonitor.html">MobileMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MockNetworkDataManager.html">MockNetworkDataManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/OfflineAuthenticationHandler.html">OfflineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/OpenURLService.html">OpenURLService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredixMobileAuthorizationHandler.html">PredixMobileAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredixMobileServerInformationFetcher.html">PredixMobileServerInformationFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredixMobilityManager.html">PredixMobilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SFAuthenticationSessionHandler.html">SFAuthenticationSessionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ServiceRouter.html">ServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAAAuthorizationHandler.html">UAAAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAABrowserAuthenticationHandler.html">UAABrowserAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAARefreshAuthenticationHandler.html">UAARefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAAServiceAuthenticationHandler.html">UAAServiceAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UserManager.html">UserManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WaitStateReturn.html">WaitStateReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK9ApiSchemeSSv">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK15ApiSchemeSecureSSv">ApiSchemeSecure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK26DatabaseManagerErrorDomainSSv">DatabaseManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK33DocumentChangedNotificationPrefixSSv">DocumentChangedNotificationPrefix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK11HttpVersionSSv">HttpVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK19KeychainErrorDomainSSv">KeychainErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK37ReplicationCompleteNotificationSuffixSSv">ReplicationCompleteNotificationSuffix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AuthenticationStage.html">AuthenticationStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AuthenticationValidationType.html">AuthenticationValidationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DocumentTypes.html">DocumentTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Http.html">Http</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Http/StatusCode.html">– StatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Http/Method.html">– Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/NotificationConstants.html">NotificationConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PredixMobileErrorDomain.html">PredixMobileErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/QuerySortOrder.html">QuerySortOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/RequestBodyEncoding.html">RequestBodyEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ServiceId.html">ServiceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/VersionInfoKeys.html">VersionInfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/WaitState.html">WaitState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/URLSessionConfiguration.html">URLSessionConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AuthenticationHandlerUIDelegate.html">AuthenticationHandlerUIDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BrowserBasedAuthenticationHandlerDelegate.html">BrowserBasedAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CommandContents.html">CommandContents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CommandRecord.html">CommandRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/FailableAuthenticationHandlerDelegate.html">FailableAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HybridOfflineAuthenticationHandlerDelegate.html">HybridOfflineAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/LogTransmitter.html">LogTransmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NotificationManagerDelegate.html">NotificationManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ProvideCredentialsAuthenticationHandlerDelegate.html">ProvideCredentialsAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/QueryParameters.html">QueryParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ServiceProtocol.html">ServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PredixMobileServerInformation.html">PredixMobileServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PredixUAAAccessToken.html">PredixUAAAccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryByKeyList.html">QueryByKeyList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryByKeyRange.html">QueryByKeyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryResultList.html">QueryResultList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryResultRow.html">QueryResultRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:9PredixSDK33AuthenticationCredentialsProvidera">AuthenticationCredentialsProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:9PredixSDK21PushReplicationFiltera">PushReplicationFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:9PredixSDK41ServiceBasedAuthenticationHandlerDelegatea">ServiceBasedAuthenticationHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK4UserV"></a>
+                    <a name="//apple_ref/swift/Struct/User" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK4UserV">User</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a User</p>
+
+                        <a href="Structs/User.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK14ViewDefinitionV"></a>
+                    <a name="//apple_ref/swift/Struct/ViewDefinition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK14ViewDefinitionV">ViewDefinition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure used in PredixMobilityConfiguration to define a database View.
+ See dataViewDefinitions and appendDataViewDefinition</p>
+
+                        <a href="Structs/ViewDefinition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ViewDefinition</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK18ReachabilityStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/ReachabilityStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK18ReachabilityStatusV">ReachabilityStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OptionSet indicating endpoint connectivity statuses</p>
+
+                        <a href="Structs/ReachabilityStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span><span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A23MobileServerInformationV"></a>
+                    <a name="//apple_ref/swift/Struct/PredixMobileServerInformation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A23MobileServerInformationV">PredixMobileServerInformation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Model for Predix Mobile server information as returned by the <code><a href="Classes/PredixMobileServerInformationFetcher.html">PredixMobileServerInformationFetcher</a></code></p>
+
+                        <a href="Structs/PredixMobileServerInformation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixMobileServerInformation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK34AuthenticationManagerConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/AuthenticationManagerConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK34AuthenticationManagerConfigurationV">AuthenticationManagerConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configuration for Authentication</p>
+
+                        <a href="Structs/AuthenticationManagerConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationManagerConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK22ShowSeriousErrorHelperV"></a>
+                    <a name="//apple_ref/swift/Struct/ShowSeriousErrorHelper" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK22ShowSeriousErrorHelperV">ShowSeriousErrorHelper</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper to show the Serious Error UI displayed when the SDK encounters a error from which it cannot recover.</p>
+
+                        <a href="Structs/ShowSeriousErrorHelper.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ShowSeriousErrorHelper</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK14QueryResultRowV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryResultRow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK14QueryResultRowV">QueryResultRow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a single row of data returned from a query</p>
+
+                        <a href="Structs/QueryResultRow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryResultRow</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK15QueryResultListV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryResultList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK15QueryResultListV">QueryResultList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Results of a view query</p>
+
+                        <a href="Structs/QueryResultList.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryResultList</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK14QueryByKeyListV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK14QueryByKeyListV">QueryByKeyList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query parameter structure to use when querying a known list of keys.</p>
+
+                        <a href="Structs/QueryByKeyList.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK15QueryByKeyRangeV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK15QueryByKeyRangeV">QueryByKeyRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query parameter structure to use when querying a range of keys.</p>
+
+                        <a href="Structs/QueryByKeyRange.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A14UAAAccessTokenV"></a>
+                    <a name="//apple_ref/swift/Struct/PredixUAAAccessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A14UAAAccessTokenV">PredixUAAAccessToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Model that represents a Predix UAA session.  Please visit the <a href="https://docs.cloudfoundry.org/api/uaa/#overview">UAA documentation</a> site for more information</p>
+
+                        <a href="Structs/PredixUAAAccessToken.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixUAAAccessToken</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-11-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PredixMobilityConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/PredixMobilityConfiguration" class="dashAnchor"></a>
+
+    <a title="PredixMobilityConfiguration Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PredixSDK Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/PredixDev/PredixSDKForiOS">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PredixSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      PredixMobilityConfiguration Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationHandler/AuthenticateResult.html">– AuthenticateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationManager.html">AuthenticationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationManager/AuthenticationCompletionStatus.html">– AuthenticationCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Command.html">Command</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DatabaseManager.html">DatabaseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FullTextSearch.html">FullTextSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/HybridOfflineAuthenticationHandler.html">HybridOfflineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MobileMonitor.html">MobileMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MockNetworkDataManager.html">MockNetworkDataManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OfflineAuthenticationHandler.html">OfflineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OpenURLService.html">OpenURLService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobileAuthorizationHandler.html">PredixMobileAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobileServerInformationFetcher.html">PredixMobileServerInformationFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityManager.html">PredixMobilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SFAuthenticationSessionHandler.html">SFAuthenticationSessionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceRouter.html">ServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAAAuthorizationHandler.html">UAAAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAABrowserAuthenticationHandler.html">UAABrowserAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAARefreshAuthenticationHandler.html">UAARefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAAServiceAuthenticationHandler.html">UAAServiceAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UserManager.html">UserManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WaitStateReturn.html">WaitStateReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK9ApiSchemeSSv">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK15ApiSchemeSecureSSv">ApiSchemeSecure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK26DatabaseManagerErrorDomainSSv">DatabaseManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK33DocumentChangedNotificationPrefixSSv">DocumentChangedNotificationPrefix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK11HttpVersionSSv">HttpVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK19KeychainErrorDomainSSv">KeychainErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK37ReplicationCompleteNotificationSuffixSSv">ReplicationCompleteNotificationSuffix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthenticationStage.html">AuthenticationStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DocumentTypes.html">DocumentTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http.html">Http</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http/StatusCode.html">– StatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http/Method.html">– Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NotificationConstants.html">NotificationConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PredixMobileErrorDomain.html">PredixMobileErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/QuerySortOrder.html">QuerySortOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/RequestBodyEncoding.html">RequestBodyEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ServiceId.html">ServiceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/VersionInfoKeys.html">VersionInfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WaitState.html">WaitState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URLSessionConfiguration.html">URLSessionConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AuthenticationHandlerUIDelegate.html">AuthenticationHandlerUIDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AuthorizationHandler.html">AuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserBasedAuthenticationHandlerDelegate.html">BrowserBasedAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CommandContents.html">CommandContents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CommandRecord.html">CommandRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FailableAuthenticationHandlerDelegate.html">FailableAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HybridOfflineAuthenticationHandlerDelegate.html">HybridOfflineAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LogTransmitter.html">LogTransmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NotificationManagerDelegate.html">NotificationManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ProvideCredentialsAuthenticationHandlerDelegate.html">ProvideCredentialsAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/QueryParameters.html">QueryParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceProtocol.html">ServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PredixMobileServerInformation.html">PredixMobileServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PredixUAAAccessToken.html">PredixUAAAccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryByKeyList.html">QueryByKeyList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryByKeyRange.html">QueryByKeyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryResultList.html">QueryResultList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryResultRow.html">QueryResultRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9PredixSDK33AuthenticationCredentialsProvidera">AuthenticationCredentialsProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9PredixSDK21PushReplicationFiltera">PushReplicationFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9PredixSDK41ServiceBasedAuthenticationHandlerDelegatea">ServiceBasedAuthenticationHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>PredixMobilityConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobilityConfiguration</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Static class of elements Predix Mobile SDK consumers can use to adjust to configure aspects of the SDK.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Properties">
+                  <h3 class="section-name">Public Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC44automaticallyListenForApplicationStateEventsSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/automaticallyListenForApplicationStateEvents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC44automaticallyListenForApplicationStateEventsSbvZ">automaticallyListenForApplicationStateEvents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates the SDK will automatically listen for Application state events.
+Defaults to true. If false, the container application is expected to call PredixMobilityManager&rsquo;s
+application state methods such as applicationWillTerminate, applicationDidBecomeActive, etc.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">automaticallyListenForApplicationStateEvents</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19defaultLoggingLevelAA06LoggerG0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultLoggingLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19defaultLoggingLevelAA06LoggerG0OvZ">defaultLoggingLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the default logging level to be used if no logging level configuration is found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultLoggingLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/LoggerLevel.html">LoggerLevel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">info</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19defaultDatabaseNameSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultDatabaseName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19defaultDatabaseNameSSvZ">defaultDatabaseName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the default database name to use. This value is overridden by the user&rsquo;s information upon login, if a database name key is found within the user&rsquo;s information.</p>
+
+<p><em>Default:</em> <code>pm</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultDatabaseName</span> <span class="o">=</span> <span class="s">"pm"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC20authenticationSchemeSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/authenticationScheme" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC20authenticationSchemeSSvZ">authenticationScheme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the authentication scheme to watch for during login.
+During authentication the user will login via a web page, this web page is then expected to redirect to a URL, in the format of <authenticationScheme>://<authenticationGrantIndicator></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">authenticationScheme</span> <span class="o">=</span> <span class="s">"gepredixgo"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC28authenticationGrantIndicatorSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/authenticationGrantIndicator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC28authenticationGrantIndicatorSSvZ">authenticationGrantIndicator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the authentication grant indicator hostname to watch for during login.
+During authentication the user will login via a web page, this web page is then expected to redirect to a URL, in the format of <authenticationScheme>://<authenticationGrantIndicator></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">authenticationGrantIndicator</span> <span class="o">=</span> <span class="s">"authorization_grant"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC21loggingLevelConfigKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/loggingLevelConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC21loggingLevelConfigKeySSvZ">loggingLevelConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine the logging level in either the info.plist or the settings bundle root.plist</p>
+
+<p><em>Default:</em> <code>logging_level</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">loggingLevelConfigKey</span> <span class="o">=</span> <span class="s">"logging_level"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC26loggingLevelConfigLocationAA0dH0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/loggingLevelConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC26loggingLevelConfigLocationAA0dH0OvZ">loggingLevelConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the logging level configuration key/value should be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">loggingLevelConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">settings</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC26traceLogsRequestsConfigKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/traceLogsRequestsConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC26traceLogsRequestsConfigKeySSvZ">traceLogsRequestsConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine the <q>Trace logging level logs all requests</q> value is in either the info.plist or the settings bundle root.plist</p>
+
+<p><em>Default:</em> <code>traceLogsReqeuests</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">traceLogsRequestsConfigKey</span> <span class="o">=</span> <span class="s">"traceLogsReqeuests"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC31traceLogsRequestsConfigLocationAA0dI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/traceLogsRequestsConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC31traceLogsRequestsConfigLocationAA0dI0OvZ">traceLogsRequestsConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the <q>Trace logging level logs all requests</q> configuration key/value should be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">traceLogsRequestsConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">settings</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC23serverEndpointConfigKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/serverEndpointConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC23serverEndpointConfigKeySSvZ">serverEndpointConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine the server endpoint hostname in either the info.plist or the settings bundle root.plist.</p>
+
+<p><em>Default:</em> <code>server_url</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">serverEndpointConfigKey</span> <span class="o">=</span> <span class="s">"server_url"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC28serverEndpointConfigLocationAA0dH0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/serverEndpointConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC28serverEndpointConfigLocationAA0dH0OvZ">serverEndpointConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the <q>server endpoint hostname</q> configuration key/value should be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">serverEndpointConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">settings</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC17serverEndpointURL10Foundation0G0VSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/serverEndpointURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC17serverEndpointURL10Foundation0G0VSgvZ">serverEndpointURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base server endpoint URL, or nil if <code>LoadConfiguration</code> has not yet been called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">serverEndpointURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC18userSessionURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/userSessionURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC18userSessionURLPathSSvZ">userSessionURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoint path used to retrieve user session information during the login process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">userSessionURLPath</span> <span class="o">=</span> <span class="s">"/pg/session/active"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC12loginURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/loginURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC12loginURLPathSSvZ">loginURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoint path used to initialize the login process and display the login page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">loginURLPath</span> <span class="o">=</span> <span class="s">"/pg/session/create"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC13logoutURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/logoutURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC13logoutURLPathSSvZ">logoutURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoint path used to log the user out and remove the current user session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">logoutURLPath</span> <span class="o">=</span> <span class="s">"/pg/session/logout"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC22dataReplicationURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/dataReplicationURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC22dataReplicationURLPathSSvZ">dataReplicationURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoint path used to syncronize the local database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">dataReplicationURLPath</span> <span class="o">=</span> <span class="s">"/pg/data"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC20clientMonitorURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitorURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC20clientMonitorURLPathSSvZ">clientMonitorURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoinr path used to upload monitor logs and alerts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitorURLPath</span> <span class="o">=</span> <span class="s">"/pg/monitor/v1/log"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC25authorizationCheckURLPathSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/authorizationCheckURLPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC25authorizationCheckURLPathSSvZ">authorizationCheckURLPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The server endpoint path used to validate the user has a valid authenticated session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">authorizationCheckURLPath</span> <span class="o">=</span> <span class="n"><a href="../Classes/PredixMobilityConfiguration.html#/s:9PredixSDK0A21MobilityConfigurationC18userSessionURLPathSSvZ">userSessionURLPath</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC38authorizationCheckAuthorizedStatusCodeAA4HttpO0hI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/authorizationCheckAuthorizedStatusCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC38authorizationCheckAuthorizedStatusCodeAA4HttpO0hI0OvZ">authorizationCheckAuthorizedStatusCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Http.StatusCode expected to be returned when calling the authorizationCheckURLPath, when the user has a valid authenticated session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">authorizationCheckAuthorizedStatusCode</span> <span class="o">=</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="n">ok</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34authorizationCheckValidStatusCodesSayAA4HttpO0H4CodeOGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/authorizationCheckValidStatusCodes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34authorizationCheckValidStatusCodesSayAA4HttpO0H4CodeOGvZ">authorizationCheckValidStatusCodes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of Http.StatusCodes expected to be returned when calling the authorizationCheckURLPath, whether the user has an authenticated session or not.
+Any values returned from the authorizationCheckURLPath call other than these codes are interpreted as an error condition where the endpoint server is unavailable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">authorizationCheckValidStatusCodes</span> <span class="o">=</span> <span class="p">[</span><span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="n">ok</span><span class="p">,</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="n">found</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC22userSessionUsernameKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/userSessionUsernameKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC22userSessionUsernameKeySSvZ">userSessionUsernameKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The key in the response JSON from the userSessionURLPath call that specifies the user name value. The value this key is associated with is expected to be a string.</p>
+
+<p><em>Default:</em> <code>name</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">userSessionUsernameKey</span> <span class="o">=</span> <span class="s">"name"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC26userSessionDatabaseNameKeySSSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/userSessionDatabaseNameKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC26userSessionDatabaseNameKeySSSgvZ">userSessionDatabaseNameKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The key in the response JSON from the userSessionURLPath call that specifies the database name value. The value this key is associated with is expected to be a string.
+If this property is nil, or not found in the user session information then defaultDatabaseName value is used for the database name.</p>
+
+<p><em>Default:</em><code>db</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">userSessionDatabaseNameKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"db"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC20pmappDocumentNameKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmappDocumentNameKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC20pmappDocumentNameKeySSvZ">pmappDocumentNameKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key used to determine the PM app name to load in either the info.plist or the settings bundle root.plist
+This value is the <q>name</q> field in the app.json document loaded into the database with the PM cli <q>define</q> command.</p>
+
+<p><em>Default:</em> <code>pmapp_name</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmappDocumentNameKey</span> <span class="o">=</span> <span class="s">"pmapp_name"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC31pmappDocumentNameConfigLocationAA0dI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmappDocumentNameConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC31pmappDocumentNameConfigLocationAA0dI0OvZ">pmappDocumentNameConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the PM app name configuration key/value should be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmappDocumentNameConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC23pmappDocumentVersionKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmappDocumentVersionKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC23pmappDocumentVersionKeySSvZ">pmappDocumentVersionKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key used to determine the PM app version to load in either the info.plist or the settings bundle root.plist
+This value is the <q>version</q> field in the app.json document loaded into the database with the PM cli <q>define</q> command.</p>
+
+<p><em>Default:</em> <code>pmapp_version</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmappDocumentVersionKey</span> <span class="o">=</span> <span class="s">"pmapp_version"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34pmappDocumentVersionConfigLocationAA0dI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmappDocumentVersionConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34pmappDocumentVersionConfigLocationAA0dI0OvZ">pmappDocumentVersionConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the PM app version configuration key/value should be found.</p>
+
+<p><em>Default:</em> <code><a href="../Enums/ConfigurationLocation.html#/c:@M@PredixSDK@E@ConfigurationLocation@ConfigurationLocationInfoplist">ConfigurationLocation.infoplist</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmappDocumentVersionConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC016pmAppDocumentWebF7NameKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmAppDocumentWebAppNameKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC016pmAppDocumentWebF7NameKeySSvZ">pmAppDocumentWebAppNameKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The key in the PM app document that determines the initial webapp to load into the container at startup.</p>
+
+<p><em>Default:</em> <code>starter</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmAppDocumentWebAppNameKey</span> <span class="o">=</span> <span class="s">"starter"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC020pmAppDocumentOfflineF7NameKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmAppDocumentOfflineAppNameKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC020pmAppDocumentOfflineF7NameKeySSvZ">pmAppDocumentOfflineAppNameKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The key in the PM app document that determines the offline authentication webapp to use during offline login.</p>
+
+<p><em>Default:</em> <code>offline</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmAppDocumentOfflineAppNameKey</span> <span class="o">=</span> <span class="s">"offline"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC28pmAppDocumentDependenciesKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pmAppDocumentDependenciesKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC28pmAppDocumentDependenciesKeySSvZ">pmAppDocumentDependenciesKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The key in the PM app document that determines the available webapps array.</p>
+
+<p><em>Default:</em> <code>dependencies</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pmAppDocumentDependenciesKey</span> <span class="o">=</span> <span class="s">"dependencies"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC11apiHostnameSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/apiHostname" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC11apiHostnameSSvZ">apiHostname</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The hostname to be used for Predix Mobile SDK service calls.</p>
+
+<p><em>Default:</em> <code>pmapi</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">apiHostname</span> <span class="o">=</span> <span class="s">"pmapi"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC26seriousErrorDefaultMessageSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/seriousErrorDefaultMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC26seriousErrorDefaultMessageSSvZ">seriousErrorDefaultMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default error message used in the catastrophic error display that is shown to the user when no webapp can be loaded or the application cannot otherwise continue.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">seriousErrorDefaultMessage</span> <span class="o">=</span> <span class="s">"A serious error was encountered"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC16seriousErrorPageSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/seriousErrorPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC16seriousErrorPageSSvZ">seriousErrorPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Bundled HTML filename used for the catastrophic error display that is shown to the user when no webapp can be loaded or the application cannot otherwise continue.
+If this file is not found a native UI alert message will be used.</p>
+
+<p><em>Default:</em> <code>SeriousError.html</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">seriousErrorPage</span> <span class="o">=</span> <span class="s">"SeriousError.html"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC29additionalBootRestartWorkflowyyyccSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/additionalBootRestartWorkflow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC29additionalBootRestartWorkflowyyyccSgvZ">additionalBootRestartWorkflow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure that, if supplied, is run during the boot/restart service call. This can be used to perform additional container work that should be performed when the system is restarting.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">additionalBootRestartWorkflow</span> <span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="p">()</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC32additionalBootServicesToRegisterSayAA15ServiceProtocol_pXpGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/additionalBootServicesToRegister" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC32additionalBootServicesToRegisterSayAA15ServiceProtocol_pXpGvZ">additionalBootServicesToRegister</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of services that should be registered during the boot process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">additionalBootServicesToRegister</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ServiceProtocol.html">ServiceProtocol</a></span><span class="o">.</span><span class="k">Type</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24shouldLogUnhandledErrorsSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/shouldLogUnhandledErrors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24shouldLogUnhandledErrorsSbvZ">shouldLogUnhandledErrors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the SDK will trap and log unhandled errors before the container crashes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shouldLogUnhandledErrors</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC36shouldInitializeDefaultsFromSettingsSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/shouldInitializeDefaultsFromSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC36shouldInitializeDefaultsFromSettingsSbvZ">shouldInitializeDefaultsFromSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the SDK will automatically import default values from the Settings bundle into standard UserDefaults</p>
+
+<p><em>Default:</em> <code>true</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shouldInitializeDefaultsFromSettings</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC37shouldIssueWarningsForPlaceholderURLsSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/shouldIssueWarningsForPlaceholderURLs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC37shouldIssueWarningsForPlaceholderURLsSbvZ">shouldIssueWarningsForPlaceholderURLs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the SDK will attempt to detect URL requests for placeholder images from <a href="http://placehold.it">http://placehold.it</a> and issue a warning log entry when detected</p>
+
+<p><em>Default:</em> <code>true</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shouldIssueWarningsForPlaceholderURLs</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24requireDevicePasscodeSetSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/requireDevicePasscodeSet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24requireDevicePasscodeSetSbvZ">requireDevicePasscodeSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the SDK will require the device to have a passcode set to proceed during the Boot service startup process.</p>
+
+<p>Default:* <code>true</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">requireDevicePasscodeSet</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC33defaultInitializationDetectionKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultInitializationDetectionKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC33defaultInitializationDetectionKeySSvZ">defaultInitializationDetectionKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the key to use in NSUserDefaults to determine if the server endpoint has changed. When the server endpoint changes, as detected via this key, all user data is wiped from the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultInitializationDetectionKey</span> <span class="o">=</span> <span class="kt">PredixMobilityConfiguration</span><span class="o">.</span><span class="n">previousServerEndpointKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC27traceLogsAllRequestsDefaultSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/traceLogsAllRequestsDefault" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC27traceLogsAllRequestsDefaultSbvZ">traceLogsAllRequestsDefault</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the default to indicate a watcher will log all networks requests for the app.</p>
+
+<p>Default:* <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">traceLogsAllRequestsDefault</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24documentRevisionMaxDepthSuSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/documentRevisionMaxDepth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24documentRevisionMaxDepthSuSgvZ">documentRevisionMaxDepth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optionally specifies maximum depth of a document&rsquo;s revision tree (or, max length of its revision history.) Revisions older than this limit will be deleted when the database is compacted during when DB service close operation is called. Smaller values save space, at the expense of making document conflicts somewhat more likely. If unspecified it currently defaults to 20.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">documentRevisionMaxDepth</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC44remoteNotificationRegistrationAdditionalInfos10DictionaryVySSypGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/remoteNotificationRegistrationAdditionalInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC44remoteNotificationRegistrationAdditionalInfos10DictionaryVySSypGvZ">remoteNotificationRegistrationAdditionalInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies an app-specific data that should be included when the device registers for push notificiations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">remoteNotificationRegistrationAdditionalInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC40remoteNotificationRegistrationDocumentIdSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/remoteNotificationRegistrationDocumentId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC40remoteNotificationRegistrationDocumentIdSSvZ">remoteNotificationRegistrationDocumentId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the format of the document id to use when registering for push notifications.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">remoteNotificationRegistrationDocumentId</span> <span class="o">=</span> <span class="s">"doc_RNR_</span><span class="se">\(</span><span class="kt">PredixMobilityConfiguration</span><span class="o">.</span><span class="n">identifierForVendor</span><span class="se">)</span><span class="s">"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC42remoteNotificationRegistrationDocumentTypeSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/remoteNotificationRegistrationDocumentType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC42remoteNotificationRegistrationDocumentTypeSSvZ">remoteNotificationRegistrationDocumentType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the document type used for the push notification registratino document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">remoteNotificationRegistrationDocumentType</span> <span class="o">=</span> <span class="s">"RemoteNotificationRegistration"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC33replicationAdditionalPushSettingss10DictionaryVySSypGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/replicationAdditionalPushSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC33replicationAdditionalPushSettingss10DictionaryVySSypGvZ">replicationAdditionalPushSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional settings used to tweak the behavior of push (client to server) data replication</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">replicationAdditionalPushSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC33replicationAdditionalPullSettingss10DictionaryVySSypGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/replicationAdditionalPullSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC33replicationAdditionalPullSettingss10DictionaryVySSypGvZ">replicationAdditionalPullSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional settings used to tweak the behavior of pull (server to client) data replication</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">replicationAdditionalPullSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34replicationFailureMaxRetryAttemptsSivZ"></a>
+                    <a name="//apple_ref/swift/Variable/replicationFailureMaxRetryAttempts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34replicationFailureMaxRetryAttemptsSivZ">replicationFailureMaxRetryAttempts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>While Online and Authenticated, if replication is encountering continuous errors, after this number of consecutive errors replication will be paused for a period of time as specified by PredixMobilityConfiguration.replicationFailureRetryRecoveryTime.</p>
+
+<p>Changes to connectivity state will reset the error count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">replicationFailureMaxRetryAttempts</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC35replicationFailureRetryRecoveryTimeSdvZ"></a>
+                    <a name="//apple_ref/swift/Variable/replicationFailureRetryRecoveryTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC35replicationFailureRetryRecoveryTimeSdvZ">replicationFailureRetryRecoveryTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After PredixMobilityConfiguration.replicationFailureRetryAttempts have been surpased, replication will pause for this time interval before resuming.</p>
+
+<p>Changes to connectivity state will invalidate the timer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">replicationFailureRetryRecoveryTime</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">300.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19dataViewDefinitionsSayAA0F10DefinitionVGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/dataViewDefinitions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19dataViewDefinitionsSayAA0F10DefinitionVGvZ">dataViewDefinitions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of view definitions, consisting of a  view name, version, and closure that maps the view. 
+The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper method to append new definitions to this array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">dataViewDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ViewDefinition.html">ViewDefinition</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC32pushReplicationFilterDefinitionss10DictionaryVySSSbAFySSypGSg_AFys11AnyHashableVypGSgtcGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/pushReplicationFilterDefinitions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC32pushReplicationFilterDefinitionss10DictionaryVySSSbAFySSypGSg_AFys11AnyHashableVypGSgtcGvZ">pushReplicationFilterDefinitions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dictionary of replication push filter definitions, whose key is the name of the filter, and value is a PushReplicationFilter closure that determines if the document should be pushed to the server during replication.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Classes/PredixMobilityConfiguration.html#/s:9PredixSDK0A21MobilityConfigurationC24addPushReplicationFilterySS4name_Sbs10DictionaryVySSypGSg_AGys11AnyHashableVypGSgtc6filtertFZ">addPushReplicationFilter(name:filter:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pushReplicationFilterDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span><span class="kt"><a href="../Typealiases.html#/s:9PredixSDK21PushReplicationFiltera">PushReplicationFilter</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC32defaultPushReplicationFilterNameSSSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPushReplicationFilterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC32defaultPushReplicationFilterNameSSSgvZ">defaultPushReplicationFilterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of a PushReplicationFilter, as setup in pushReplicationFilterDefinitions, to use when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPushReplicationFilterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC38defaultPushReplicationFilterParameterss10DictionaryVySSypGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPushReplicationFilterParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC38defaultPushReplicationFilterParameterss10DictionaryVySSypGvZ">defaultPushReplicationFilterParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary of filter parameters to use when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPushReplicationFilterParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC30defaultPullReplicationChannelsSaySSGSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPullReplicationChannels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC30defaultPullReplicationChannelsSaySSGSgvZ">defaultPullReplicationChannels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of channels used to restrict data coming from the server when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPullReplicationChannels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19keychainAccessGroupSSSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/keychainAccessGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19keychainAccessGroupSSSgvZ">keychainAccessGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional keychain access group. If provided this group will be used for all keychain access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">keychainAccessGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC17keychainKeyPrefixSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/keychainKeyPrefix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC17keychainKeyPrefixSSvZ">keychainKeyPrefix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the prefix to use for keychain storage keys.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">keychainKeyPrefix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\(</span><span class="kt">PredixMobilityConfiguration</span><span class="o">.</span><span class="n">bundleId</span><span class="se">)</span><span class="s">_"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC11versionInfoSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/versionInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC11versionInfoSSvZ">versionInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a short string of version information of the running app, the Predix Mobile SDK, and some of its dependent components.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">versionInfo</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC45considerUIReadyWhenApplicationDidBecomeActiveSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/considerUIReadyWhenApplicationDidBecomeActive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC45considerUIReadyWhenApplicationDidBecomeActiveSbvZ">considerUIReadyWhenApplicationDidBecomeActive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies that when the SDK detects the ApplicationDidBecomeActive application state, the SDK can start interacting with the UI immediately. 
+ If the consuming app wants finer control over when the UI is ready for SDK interaction, it can set this flag to false, and manually post 
+ the UIReadyNotification to inform the SDK when the UI is ready for interaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">considerUIReadyWhenApplicationDidBecomeActive</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24displaySeriousErrorPopupySS_yyctcvZ"></a>
+                    <a name="//apple_ref/swift/Variable/displaySeriousErrorPopup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24displaySeriousErrorPopupySS_yyctcvZ">displaySeriousErrorPopup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This closure allows the implementation of the non-web based serious error pages to be overridden.</p>
+
+<p>In iOS the default implementation shows a UIAlertController with the error details.</p>
+
+<p>In the macOS version of the SDK there is no default implementation.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    macOS containers must include a web-based serious error page, or should implement this closure.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">displaySeriousErrorPopup</span> <span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">onRetry</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="kt"><a href="../Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a></span><span class="o">.</span><span class="n">displaySeriousErrorPopupiOS</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC15localStorageURL10Foundation0G0VvZ"></a>
+                    <a name="//apple_ref/swift/Variable/localStorageURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC15localStorageURL10Foundation0G0VvZ">localStorageURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>File system URL under which the SDK uses for all application storage.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">localStorageURL</span><span class="p">:</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19userLocalStorageURL10Foundation0H0VSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/userLocalStorageURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19userLocalStorageURL10Foundation0H0VSgvZ">userLocalStorageURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>File system URL under which the SDK uses for all application storage for the current logged in user. Nil until after authentication completes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">userLocalStorageURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC20hybridUIDatabaseNameSSSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC20hybridUIDatabaseNameSSSgvZ">hybridUIDatabaseName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secondary database to use for hybrid UI data: webapp documents and pm app documents.</p>
+
+<p>If nil the system will use a single database for all data.</p>
+
+<p>If a directory named <code>hybridUIDatabaseName</code>.cblite2 containing a sql lite database exists in the application bundle, then this database will be used as an inital data source.</p>
+
+<p>When a hybrid UI database is used, application loading will not wait for the main data database to sync before launching the hybrid ui webapp.</p>
+
+<p><strong>Example:</strong></p>
+<pre class="highlight plaintext"><code>PredixMobilityManager.hybridUIDatabaseName = "hybridui"
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC29hybridUIDatabaseNameConfigKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseNameConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC29hybridUIDatabaseNameConfigKeySSvZ">hybridUIDatabaseNameConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine the name of the hybrid UI database in either the info.plist or the settings bundle root.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseNameConfigKey</span> <span class="o">=</span> <span class="s">"HybridDatabaseName"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34hybridUIDatabaseNameConfigLocationAA0dI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseNameConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34hybridUIDatabaseNameConfigLocationAA0dI0OvZ">hybridUIDatabaseNameConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the hybrid UI database name configuration key/value should be found.</p>
+
+<p><strong>Default</strong>: Info.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseNameConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC20hybridUIAllowUpdatesSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC20hybridUIAllowUpdatesSbvZ">hybridUIAllowUpdates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Works with <code><a href="../Classes/PredixMobilityConfiguration.html#/s:9PredixSDK0A21MobilityConfigurationC20hybridUIDatabaseNameSSSgvZ">hybridUIDatabaseName</a></code> to allow the hybrid UI web elements to be updated dynamically.</p>
+
+<p>Allowing replication of hybrid UI data allows for easy updates during development, or for creating an Enterprise app that supports dynamic updates.</p>
+
+<p><strong>Behaviors:</strong></p>
+
+<p><em>true</em>: On application start, the database named in <code><a href="../Classes/PredixMobilityConfiguration.html#/s:9PredixSDK0A21MobilityConfigurationC20hybridUIDatabaseNameSSSgvZ">PredixMobilityConfiguration.hybridUIDatabaseName</a></code> will be refreshed from the backend sync gateway. Application loading will wait until this database has synced, but will not wait for the main data database to sync.</p>
+
+<p><em>false</em>: No replication will be performed to update the <code><a href="../Classes/PredixMobilityConfiguration.html#/s:9PredixSDK0A21MobilityConfigurationC20hybridUIDatabaseNameSSSgvZ">hybridUIDatabaseName</a></code> database. This database is expected to be included in the application bundle. Application loading will not wait for the main data database to sync.</p>
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    Must be <em>false</em> for any App Store production system.
+
+</div>
+
+<p><strong>Default</strong>: true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdates</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC29hybridUIAllowUpdatesConfigKeySSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdatesConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC29hybridUIAllowUpdatesConfigKeySSvZ">hybridUIAllowUpdatesConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine state of the hybridUIAllowUpdates configuration in either the info.plist or the settings bundle root.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdatesConfigKey</span> <span class="o">=</span> <span class="s">"HybridUIAllowUpdates"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34hybridUIAllowUpdatesConfigLocationAA0dI0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdatesConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34hybridUIAllowUpdatesConfigLocationAA0dI0OvZ">hybridUIAllowUpdatesConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the hybridUIAllowUpdates configuration key/value should be found.</p>
+
+<p><strong>Default</strong>: Info.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdatesConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC23clientMonitoringEnabledSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitoringEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC23clientMonitoringEnabledSbvZ">clientMonitoringEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When enabled the client will monitor and trace conditions in database and on other features in the SDK.  These monitor logs will be reported to the backend client monitor. Alert conditions detected by the client
+will be reported to the Predix NOC as an alert.  Clients can also choose to send logs for their applications.  Please visit the Mobile MonitorMonitor class for more inforamtion.</p>
+
+<p><strong>Default</strong>: false</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitoringEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC34clientMonitorSendsLogsContinuouslySbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitorSendsLogsContinuously" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC34clientMonitorSendsLogsContinuouslySbvZ">clientMonitorSendsLogsContinuously</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default monitor logs are only sent when a user logs in for the first time when enabled.  Setting this flag to true will send monitor logs when the monitor is quite for a period of time.</p>
+
+<p><strong>Default</strong>: false</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitorSendsLogsContinuously</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC37clientMonitorLogBatchWriteToDiskDelaySdvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitorLogBatchWriteToDiskDelay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC37clientMonitorLogBatchWriteToDiskDelaySdvZ">clientMonitorLogBatchWriteToDiskDelay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time in seconds the monitor should wait to see if more monitor data comes in before sending the monitor logs to the server</p>
+
+<p>NOTE:  This configuration is only valid if clientMonitoringEnabled and clientMonitorSendsLogsContinuously is enabled</p>
+
+<p><strong>Default</strong>: 10 seconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitorLogBatchWriteToDiskDelay</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC35clientMonitorHostAndEnpointOverrideSSSgvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitorHostAndEnpointOverride" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC35clientMonitorHostAndEnpointOverrideSSSgvZ">clientMonitorHostAndEnpointOverride</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>TODO temporary var, remove me please!!!!!!</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitorHostAndEnpointOverride</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC28offlineWebAppLoginUseTouchIdSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/offlineWebAppLoginUseTouchId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC28offlineWebAppLoginUseTouchIdSbvZ">offlineWebAppLoginUseTouchId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the default <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> setup is used, this flag allows the Offline webapp to use TouchId for authentication, in place of the offline password.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">offlineWebAppLoginUseTouchId</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC26clientMonitorTransmitDelaySdvZ"></a>
+                    <a name="//apple_ref/swift/Variable/clientMonitorTransmitDelay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC26clientMonitorTransmitDelaySdvZ">clientMonitorTransmitDelay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time in seconds the monitor should wait to see if more alerts happen before sending the alert to the server</p>
+
+<p>NOTE:  This configuration is only valid if clientMonitoringEnabled is enabled</p>
+
+<p><strong>Default</strong>: 30 seconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">clientMonitorTransmitDelay</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mi">30</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC04loadD0yyFZ"></a>
+                    <a name="//apple_ref/swift/Method/loadConfiguration()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC04loadD0yyFZ">loadConfiguration()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the SDK to initialize, load configuration from settings, prepare the logging system, and prepare the SDK for startup. If not called by the time PredixMobilityManager.startApp is called, it will be called at that time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">loadConfiguration</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionySS_SS7versionys10DictionaryVySSypG_yyp_ypSgtctc11mapFunctiontFZ"></a>
+                    <a name="//apple_ref/swift/Method/appendDataViewDefinition(_:version:mapFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionySS_SS7versionys10DictionaryVySSypG_yyp_ypSgtctc11mapFunctiontFZ">appendDataViewDefinition(_:version:mapFunction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper method takes a view name and version, and map function closure, creates a ViewDefinition and adds it to the dataViewDefinitions property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">appendDataViewDefinition</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mapFunction</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">properties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">emit</span><span class="p">:</span> <span class="p">(</span><span class="kt">Any</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionySS_SS7versionys10DictionaryVySSypG_yyp_ypSgtctc11mapFunctionypSayypG_AKSbtcSg06reduceL0tFZ"></a>
+                    <a name="//apple_ref/swift/Method/appendDataViewDefinition(_:version:mapFunction:reduceFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionySS_SS7versionys10DictionaryVySSypG_yyp_ypSgtctc11mapFunctionypSayypG_AKSbtcSg06reduceL0tFZ">appendDataViewDefinition(_:version:mapFunction:reduceFunction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper method takes a view name and version, and map function closure, and reduce function closure, creates a ViewDefinition and adds it to the dataViewDefinitions property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">appendDataViewDefinition</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mapFunction</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">properties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">emit</span><span class="p">:</span> <span class="p">(</span><span class="kt">Any</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">,</span> <span class="nv">reduceFunction</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">re</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Any</span><span class="p">))?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionyAA0gH0VFZ"></a>
+                    <a name="//apple_ref/swift/Method/appendDataViewDefinition(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24appendDataViewDefinitionyAA0gH0VFZ">appendDataViewDefinition(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a ViewDefinition to the dataViewDefinitions property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">appendDataViewDefinition</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewDefinition</span><span class="p">:</span> <span class="kt"><a href="../Structs/ViewDefinition.html">ViewDefinition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC24addPushReplicationFilterySS4name_Sbs10DictionaryVySSypGSg_AGys11AnyHashableVypGSgtc6filtertFZ"></a>
+                    <a name="//apple_ref/swift/Method/addPushReplicationFilter(name:filter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC24addPushReplicationFilterySS4name_Sbs10DictionaryVySSypGSg_AGys11AnyHashableVypGSgtc6filtertFZ">addPushReplicationFilter(name:filter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a filter for Push replication, consisting of a filter name, and a closure called to determine if a given document should be sent to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">addPushReplicationFilter</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">filter</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:9PredixSDK21PushReplicationFiltera">PushReplicationFilter</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC14getVersionInfos10DictionaryVyS2SGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/getVersionInfo()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC14getVersionInfos10DictionaryVyS2SGyFZ">getVersionInfo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary containing version information of the app, the SDK, and dependent components, as well as some basic environmental information for the current device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getVersionInfo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK0A21MobilityConfigurationC19wipeApplicationDatayyFZ"></a>
+                    <a name="//apple_ref/swift/Method/wipeApplicationData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK0A21MobilityConfigurationC19wipeApplicationDatayyFZ">wipeApplicationData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all data associated with the app, including the local database and keychain entries.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">wipeApplicationData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-11-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
