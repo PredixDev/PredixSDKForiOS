@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Indexer Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/Indexer" class="dashAnchor"></a>
+
+    <a title="Indexer Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PredixSDK Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/PredixDev/PredixSDKForiOS">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PredixSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Indexer Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationHandler/AuthenticateResult.html">– AuthenticateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationManager.html">AuthenticationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationManager/AuthenticationCompletionStatus.html">– AuthenticationCompletionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database.html">Database</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/OpenDatabaseConfiguration.html">– OpenDatabaseConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/ReplicationConfiguration.html">– ReplicationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Document.html">Document</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Document/Metadata.html">– Metadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DocumentAttachment.html">DocumentAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MockNetworkDataManager.html">MockNetworkDataManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OfflineAuthenticationHandler.html">OfflineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixSyncAuthorizationHandler.html">PredixSyncAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixSyncServerInformationFetcher.html">PredixSyncServerInformationFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueryResultEnumerator.html">QueryResultEnumerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueryResultRow.html">QueryResultRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Reachability/ReachabilityConfiguration.html">– ReachabilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SFAuthenticationSessionHandler.html">SFAuthenticationSessionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAAAuthorizationHandler.html">UAAAuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAABrowserAuthenticationHandler.html">UAABrowserAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAARefreshAuthenticationHandler.html">UAARefreshAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UAAServiceAuthenticationHandler.html">UAAServiceAuthenticationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/URLDocumentAttachment.html">URLDocumentAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UserManager.html">UserManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthenticationStage.html">AuthenticationStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http.html">Http</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http/StatusCode.html">– StatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Http/Method.html">– Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/InfoKeys.html">InfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PredixConstants.html">PredixConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PredixSDKErrorDomain.html">PredixSDKErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/QuerySortOrder.html">QuerySortOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/RequestBodyEncoding.html">RequestBodyEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Utilities.html">Utilities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URLSessionConfiguration.html">URLSessionConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AuthenticationHandlerUIDelegate.html">AuthenticationHandlerUIDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AuthorizationHandler.html">AuthorizationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserBasedAuthenticationHandlerDelegate.html">BrowserBasedAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DatabaseChangeDelegate.html">DatabaseChangeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ErrorCode.html">ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FailableAuthenticationHandlerDelegate.html">FailableAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Indexer.html">Indexer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LogWriter.html">LogWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ProvideCredentialsAuthenticationHandlerDelegate.html">ProvideCredentialsAuthenticationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/QueryConnectivity.html">QueryConnectivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/QueryParameters.html">QueryParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationDetails.html">ReplicationDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationFilterDelegate.html">ReplicationFilterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationStatusDelegate.html">ReplicationStatusDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DocumentChangedDetails.html">DocumentChangedDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ErrorCodes.html">ErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ErrorCodes/Database.html">– Database</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ErrorCodes/Keychain.html">– Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PredixSyncServerInformation.html">PredixSyncServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PredixUAAAccessToken.html">PredixUAAAccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryByKeyList.html">QueryByKeyList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/QueryByKeyRange.html">QueryByKeyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9PredixSDK33AuthenticationCredentialsProvidera">AuthenticationCredentialsProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9PredixSDK41ServiceBasedAuthenticationHandlerDelegatea">ServiceBasedAuthenticationHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Indexer</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Indexer</span></code></pre>
+
+                </div>
+              </div>
+            <p>Creates a Database index used to then query the database</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP11AddIndexRowa"></a>
+                    <a name="//apple_ref/swift/Alias/AddIndexRow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP11AddIndexRowa">AddIndexRow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the function that will be called to add an index row to the index. May be called multiple times to create multiple index rows for a single document, or not at all to skip a document from being included in the index.</p>
+
+<p>See also the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3Mapa">Indexer.Map</a></code> typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">AddIndexRow</span> <span class="o">=</span>  <span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index key. When indexes are queried, the key is used to match documents and sort the query results. This key can be single values or be made up of arrays for more complex querying and sorting needs.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional value associated with the key. When indexes are queried, the value is included in the result set. Retreiving these values is therefore a more efficient operation than retrieving an entire document if only a few properties from the document are needed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP3Mapa"></a>
+                    <a name="//apple_ref/swift/Alias/Map" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP3Mapa">Map</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the function that will be called when the database documents are indexed.</p>
+
+<p>See also the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">Indexer.map</a></code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Map</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html">Document</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">addIndexRow</span><span class="p">:</span> <span class="kd">@escaping</span>  <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP11AddIndexRowa">AddIndexRow</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>document</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The document being indexed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addIndexRow</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure to be called to add an index row to the index. May be called multiple times to create multiple index rows for a single document, or not at all to skip a document from being included in the index. First parameter is the index key. When indexes are queried, the key is used to match documents and sort the query results. This key can be single values or be made up of arrays for more complex querying and sorting needs. Second parameter is an optional value associated with the key. When indexes are queried, the value is included in the result set. Retreiving these values is therefore a more efficient operation than retrieving an entire document if only a few properties from the document are needed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP6Reducea"></a>
+                    <a name="//apple_ref/swift/Alias/Reduce" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP6Reducea">Reduce</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the function used for <a href="https://en.wikipedia.org/wiki/MapReduce">MapReduce</a> style indexes to perform the reduce sumarization.</p>
+
+<p>See also the <code>Index.reduce</code> property.</p>
+
+<p>If provided, the reduce function will be called when the index is queried to summarize the results of a index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Reduce</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">rereduce</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of keys to be reduced (or empty if this is a rereduce)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A parallel array of values to be reduced, corresponding 1::1 with the keys.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rereduce</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if the input values are the results of previous reductions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The reduced value; almost always a scalar or small fixed-size object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP4nameSSv"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP4nameSSv">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Name of the index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP7versionSSv"></a>
+                    <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP7versionSSv">version</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Version of the index</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <em>Versioning:</em>
+
+</div>
+
+<p>Once created, a database index is stored as part of the data in database, for this reason, changes to an index require special handling.</p>
+
+<p>If any part of the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">map</a></code> function or <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv">reduce</a></code> function change, the <code>version</code> string should be changed to ensure the index is properly updated.
+Failure to change this value when updating the code will lead to unpredicable results.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv"></a>
+                    <a name="//apple_ref/swift/Property/map" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">map</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3Mapa">Map</a></code> function that will be called when the database documents are indexed.</p>
+
+<p>A map function&rsquo;s job is to analyze a database document&rsquo;s contents and identify key/value pairs to be indexed. A given document can add a single key/value pair, multiple key/value pairs, or no key/value pairs to the index, depending on the data and what the index is indexing. The index is then used to query the database, and controls the sort order of the query results.</p>
+
+<p><strong>Important rules for the map function:</strong></p>
+
+<ul>
+<li>The function must always produce the same output for the same input</li>
+</ul>
+
+<p>The function&rsquo;s output must be consistant or the index it builds will not produce valid queries. The function must not use external information or state to make it&rsquo;s decisions.</p>
+
+<ul>
+<li>The function must be thread-safe</li>
+</ul>
+
+<p>The indexing will take place in a background thread or threads, and may be parallelized.</p>
+
+<ul>
+<li>The function cannot change external state</li>
+</ul>
+
+<p>In addition to causing thread-safty issues, it is unpredicable as to when the function is called or what documents are sent to it.</p>
+
+<p>Both the key and value passed to <code>emit</code> can be any JSON-compatible objects such as strings, numbers, booleans, arrays, dictionaries, and null (NSNull)</p>
+
+<p><strong>Sorting:</strong></p>
+
+<p>Sorting in the index depends on the data type of the <em>key</em>. Sorting is done in this order:</p>
+
+<ul>
+<li>Null</li>
+<li>Boolean: false, then true</li>
+<li>Numbers, in numeric order</li>
+<li>Strings, case-insensitive, following the <a href="http://unicode.org/reports/tr10/">Unicode Collation Algorithm</a></li>
+<li>Arrays, compared item-by-item.</li>
+<li>Dictionaries/maps, also compared item-by-item. See warning below.</li>
+</ul>
+
+<p>Details:</p>
+
+<p><em>Arrays</em> are particularly useful to achieve multiple layers of sorting, since elements are compared in order of their array index. So, all the first array elements are compaired, then all the second elements, etc. The net effect of this type of index can be a sorted structure like:</p>
+<pre class="highlight plaintext"><code>| Ingredient | Type            |
+|------------|-----------------|
+| Olive      | Black           |
+| Olive      | Green           |
+| Olive      | Pimento stuffed |
+| Vermouth   | Dry             |
+| Vermouth   | Extra Dry       |
+| Vermouth   | French          |
+| Vodka      | Grey Goose      |
+| Vodka      | Stoli           |
+| Vodka      | Tito's          |
+</code></pre>
+
+<p><em>Dictionaries/maps</em> are a particularly poor type to use for sorting since JSON doesn&rsquo;t specify any ordering of keys, so the order of items is ambiguous. So while using dictionaries as key is technically possible, it is not recommended.</p>
+
+<p><strong>Values:</strong></p>
+
+<p>Emitting a <em>value</em> is not required, but can improve performance when querying large documents. Values are generally a subset of one or more document properties needed when a query is run against the index; for example to display search results in a grid, or to summarize a child record in a master view. This can avoid the cost of retreiving the entire document to paint a UI needing only a few values. Unlike the <em>key</em> element, dictionaries/maps is very useful type as a <em>value</em>, since they can be used to return multiple document properties in the single <em>value</em> emitted element.</p>
+
+<p>It is not recommended that the entire document be returned as a <em>value</em>, even in cases where the entire document will be needed by the consumer of the index. When querying the index, the Id of the document that generated the index row is always returned as part of the query results. Thus the Id can be used to retrive selected documents. Additionally, there is also the option to return the entire document in the query results as well. Retrieving the document during the query is more efficent in both storage and processing time than adding the entire docuement to the index as a <em>value</em>.</p>
+
+<p>There can be instances when it is useful for the query&rsquo;s document id to be the id of a different docuement than that which emitted the index row. This can be acheived by emiting a dictionary value where the dictionary contains a key/value pair where the key is <q>_id</q>, and the value is the document id of the document you want to associate with the index row, rather than the source document id.</p>
+
+<p><em>For example:</em></p>
+<pre class="highlight plaintext"><code>let myMap: Indexer.Map = { (document, addIndexRow) in
+
+    // if the source document contains a "related_documents" property
+    if let relatedDocuments = document["related_documents"] as? [String] {
+        // for each value in "related_documents" (which are related document ids)
+        for relatedDocument in relatedDocuments {
+            // add an index row with a key of type and id, and a value that changes the query results document id
+            // to the related document.
+            let key = [type, document.id]
+            let value = ["_id": relatedDocument]
+            addIndexRow(key, value)
+        }
+    }
+}
+
+let myIndex = Index(name: "myIndex", version: "1", map: myMap)
+
+</code></pre>
+
+<p>Using the map above, a query could then be run that would pass a given document Id, then receive back all the documents related to that document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">map</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3Mapa">Map</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv"></a>
+                    <a name="//apple_ref/swift/Property/reduce" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv">reduce</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An optional<code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6Reducea">Reduce</a></code> function that will be called when a database index is queried to summarize the results of the query.</p>
+
+<p>Reduce functions are the second half of the <a href="https://en.wikipedia.org/wiki/MapReduce">map/reduce technique</a>. They&rsquo;re optional, and less commonly used. A reduce function post-processes the indexed key/value pairs generated by the map function, by aggregating the values together and is commonly used to provide counts, totals, or averages.</p>
+
+<p>A reduce function takes an ordered list of key/value pairs, the keys and values from the index, and aggregates them together into a single object, then returns that object.</p>
+
+<p>For indexes that do not emit a <em>value</em>, the value array will be an array of NSNull objects.</p>
+
+<p><strong>Rereduce</strong></p>
+
+<p>The rereduce flag is used when querying large data sets. When the data set is large the underlying system will break the map/reduce into smaller chucks, run the reduce on each chunk, then run reduce again on the reduced chunks. When this happens, the rereduce flag will true, the key array will be empty, and the value array will contain the partial reduced values.</p>
+
+<p><strong>Example</strong></p>
+<pre class="highlight plaintext"><code>// Given a map function that emits the "type" of each document...
+let myMap: Indexer.Map = { (document, addIndexRow) in
+
+    if let type = document["type"] as? String {
+        addIndexRow(type, nil)
+        }
+    }
+
+    // This reduce function will summarize those types, and output a dictionary
+    // which contains each unique type and the total number of documents of that type.
+    let myReduce: Indexer.Reduce = =  { ( keys, values, rereduce) in
+
+    var result: [String: Int] = [:]
+
+    // if this is not a rereduce
+    if !rereduce {
+        // count each unique key value
+        if let sKeys = keys as? [String] {
+            for key in sKeys {
+                var count = result[key] ?? 0
+                count += 1
+                result[key] = count
+            }
+        }
+    } else {
+        // This is a rereduce, then our value array will be an array of
+        // dictionaries of unique key values and their counts from above.
+        if let counts = values as? [[String: Int]] {
+            // for each result array
+            for count in counts {
+                // for each key in the result
+                for key in count.keys {
+                    // count and compile a final result dictionary
+                    var count = result[key] ?? 0
+                    count += 1
+                    result[key] = count
+                }
+            }
+        }
+    }
+
+    // return the unique key values
+    // Note that regardless of the rereduce flag the result is the same data type. This must always be the case.
+    return result
+}
+
+let myIndex = Index(name: "myIndex", version: "1", map: myMap, reduce: myReduce)
+
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">reduce</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6Reducea">Reduce</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-12-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
