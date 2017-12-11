@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  GettingStarted
-//
-//  Created by Jeremy Osterhoudt on 12/7/17.
-//  Copyright © 2017 Jeremy Osterhoudt. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
