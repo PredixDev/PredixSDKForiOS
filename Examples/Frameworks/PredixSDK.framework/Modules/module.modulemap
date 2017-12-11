@@ -1,0 +1,11 @@
+framework module PredixSDK {
+  umbrella header "PredixSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PredixSDK.Swift {
+    header "PredixSDK-Swift.h"
+    requires objc
+}
