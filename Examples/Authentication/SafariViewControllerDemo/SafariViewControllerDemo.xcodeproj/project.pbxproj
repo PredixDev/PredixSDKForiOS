@@ -39,7 +39,7 @@
 		4FD8997F1F2BE64C00602726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FD899811F2BE64C00602726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FD8998E1F2BE82900602726 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		E8E03C6E1FDF074A00520A4D /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../../../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
+		E8E03C6E1FDF074A00520A4D /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PredixSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,8 @@
 			children = (
 				E8E03C6E1FDF074A00520A4D /* PredixSDK.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
+			path = ../../Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
