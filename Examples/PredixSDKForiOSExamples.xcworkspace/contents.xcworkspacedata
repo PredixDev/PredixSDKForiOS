@@ -14,6 +14,9 @@
       location = "group:Authentication/SafariViewControllerDemo/SafariViewControllerDemo.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Authentication/SFAuthenticationSessionDemo/SFAuthenticationSessionDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OnlineAPI/OnlineAPIDemo.xcodeproj">
    </FileRef>
 </Workspace>

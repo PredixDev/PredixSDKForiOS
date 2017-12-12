@@ -1,3 +1,11 @@
+//
+//  ViewController.swift
+//  PredixMobileSVCDemo
+//
+//  Created by Johns, Andy (GE Corporate) on 7/28/17.
+//  Copyright © 2017 GE. All rights reserved.
+//
+
 import UIKit
 import PredixSDK
 import SafariServices
@@ -34,35 +42,30 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
+
         self.loginResult.text = ""
         self.userInfo.text = ""
 
-         // create an AuthenticationManagerConfiguration, and load associated UAA endpoint from our Predix Mobile server endpoint
-        var config = AuthenticationManagerConfiguration()
-        config.baseURL = URL(string: "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io")
-
-        // Client Id and Client secret are are loaded from Info.plist in this example
-        //config.clientId = <<my UAA client id>>
-        //config.clientSecret = <<my UAA client secret>>
-
-        // we want to enable TouchId usage
-        config.useTouchID = true
+        //Creates an authentication manager configuration configured for your UAA instance.  The baseURL, clientId and clientSecret can also be defined in your info.plist if you wish but for simplicity I've added them to the config below.
+        var configuration = AuthenticationManagerConfiguration()
+        configuration.baseURL = URL(string: "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io")
+        configuration.clientId = "NativeClient"
+        configuration.clientSecret = "test123"
+        configuration.useTouchID = true
 
         // Create our AuthenticationManager with our configuration
-        let manager = AuthenticationManager(configuration: config)
+        let manager = AuthenticationManager(configuration: configuration)
 
         // Create an OnlineAuthenticationHandler object -- in this case an our online handler subclass is designed to work with a UAA login web page. The redirectURI is setup in the UAA configuration
-        let handler = UAABrowserAuthenticationHandler(redirectURI: "predixsdk://predixsdkforios.io/authorization_grant")
+        let handler = SFAuthenticationSessionHandler(redirectURI: "predixsdk://predixsdkforios.io/authorization_grant")
 
         // Associate a RefreshAuthenticationHandler -- in this case our refresh handler is design to work with UAA.
         handler.refreshAuthenticationHandler = UAARefreshAuthenticationHandler()
-
-        // Set delegate for handling events.
-        handler.authenticationBrowserDelegate = self
-
+        
         //associate our OnlineAuthenticationHandler with the AuthenticationManager
         manager.onlineAuthenticationHandler = handler
-
+        handler.manager = manager
+        
         //associate an AuthorizationHandler with the AuthenticationManager
         manager.authorizationHandler = UAAAuthorizationHandler()
 
@@ -98,44 +101,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
-
-//BrowserBasedAuthenticationHandlerDelegate methods
-extension ViewController : BrowserBasedAuthenticationHandlerDelegate {
-
-    func authenticationHandler(_ authenticationHandler: AuthenticationHandler, loadWebAuthenticationUrl url: URL, shouldFollowRedirect: @escaping (URL) -> (Bool)) {
-
-        // In this case when we have a login URL to display, we'll create a SafariViewController and use it to display the login URL.
-
-        (UIApplication.shared.delegate as? AppDelegate)?.checkAuthRedirect = shouldFollowRedirect
-        self.createAndShowSVC(url)
-    }
-    
-    public func authenticationHandler(_ authenticationHandler: PredixSDK.AuthenticationHandler, willStoreQueryParameters queryStringInfo: [String : String]) -> [String : Any] {
-        print("did we get here?")
-        return queryStringInfo
-    }
-
-    private func createAndShowSVC(_ url: URL?) {
-
-        let svc = SFSafariViewController(url: url!, entersReaderIfAvailable: false)
-
-        svc.delegate = self
-
-        self.present(svc, animated: true, completion: nil)
-
-        NotificationCenter.default.addObserver(forName: Notification.Name.PredixAuthenticationComplete, object: nil, queue: OperationQueue.main) { _ in
-            svc.dismiss(animated: true, completion: nil)
-        }
-
-    }
-}
-
-// If the user choses to exit the SafariViewController without logging in, we cancel the authentication process
-extension ViewController: SFSafariViewControllerDelegate {
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        if let mgr = self.authMan, mgr.isAuthenticationInProgress {
-            mgr.cancelAuthentication()
-        }
-    }
 }
