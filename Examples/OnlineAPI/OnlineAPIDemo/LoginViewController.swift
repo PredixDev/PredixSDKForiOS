@@ -1,7 +1,7 @@
 import UIKit
 import PredixSDK
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     
     fileprivate var credentialProvider: AuthenticationCredentialsProvider?
     fileprivate var authenticationManager: AuthenticationManager?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,11 +31,19 @@ class ViewController: UIViewController {
         //Tell authentication manager we are ready to authenticate, once we call authenticate it will call our delegate with the credential provider
         authenticationManager?.authenticate { status in
             self.updateStatusText(message: "Authentication \(status)")
+            switch status {
+            case .success(_, _):
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "onlineAPI", sender: self)
+                }
+                break
+            default: break
+            }
         }
         
         self.updateStatusText(message: "Authentication Started")
     }
-
+    
     @IBAction func signInPressed(_ sender: Any) {
         updateStatusText(message: "Authentication credentials received, sending request to UAA")
         //Give the username and password to the credential provider
@@ -49,7 +57,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: ServiceBasedAuthenticationHandlerDelegate {
+extension LoginViewController: ServiceBasedAuthenticationHandlerDelegate {
     public func authenticationHandler(_ authenticationHandler: PredixSDK.AuthenticationHandler, didFailWithError error: Error) {
         updateStatusText(message: "Authentication failed: \(error)")
     }
@@ -60,6 +68,6 @@ extension ViewController: ServiceBasedAuthenticationHandlerDelegate {
     
     public func authenticationHandler(_ authenticationHandler: AuthenticationHandler, provideCredentialsWithCompletionHandler completionHandler: @escaping AuthenticationCredentialsProvider) {
         //Set our credential provider so that when we sign in we can pass the username and password from the text fields to the authentication manager
-       credentialProvider = completionHandler
+        credentialProvider = completionHandler
     }
 }

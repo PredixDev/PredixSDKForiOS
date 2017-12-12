@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         let manager = AuthenticationManager(configuration: config)
 
         // Create an OnlineAuthenticationHandler object -- in this case an our online handler subclass is designed to work with a UAA login web page. The redirectURI is setup in the UAA configuration
-        let handler = UAABrowserAuthenticationHandler(redirectURI: "https://predix.io")
+        let handler = UAABrowserAuthenticationHandler(redirectURI: "predixsdkforios://authorization_grant")
 
         // Associate a RefreshAuthenticationHandler -- in this case our refresh handler is design to work with UAA.
         handler.refreshAuthenticationHandler = UAARefreshAuthenticationHandler()

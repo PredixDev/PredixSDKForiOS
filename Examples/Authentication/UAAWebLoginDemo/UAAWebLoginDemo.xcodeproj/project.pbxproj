@@ -13,18 +13,18 @@
 		4F9489F01F2BF3FF008B9AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9489EF1F2BF3FF008B9AF8 /* Assets.xcassets */; };
 		4F9489F31F2BF3FF008B9AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9489F11F2BF3FF008B9AF8 /* LaunchScreen.storyboard */; };
 		4F948A031F2BF627008B9AF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F948A021F2BF627008B9AF8 /* LoginViewController.swift */; };
-		E8E03C6C1FDF072700520A4D /*  in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E03C681FDF06CB00520A4D /*  */; };
-		E8E03C6D1FDF072700520A4D /*  in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8E03C681FDF06CB00520A4D /*  */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E88199321FDF395400F51682 /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88199301FDF395200F51682 /* PredixSDK.framework */; };
+		E88199331FDF395400F51682 /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E88199301FDF395200F51682 /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4FC3828E1F312DF5007C1DFB /* Embed Frameworks */ = {
+		E881992B1FDF390800F51682 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E8E03C6D1FDF072700520A4D /*  in Embed Frameworks */,
+				E88199331FDF395400F51682 /* PredixSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 		4F9489F41F2BF3FF008B9AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F9489FB1F2BF562008B9AF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4F948A021F2BF627008B9AF8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E8E03C681FDF06CB00520A4D /*  */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ""; sourceTree = "<group>"; };
+		E88199301FDF395200F51682 /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8E03C6C1FDF072700520A4D /*  in Frameworks */,
+				E88199321FDF395400F51682 /* PredixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +99,9 @@
 		E8A1AC881FDF056C0078A17F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8E03C681FDF06CB00520A4D /*  */,
+				E88199301FDF395200F51682 /* PredixSDK.framework */,
 			);
 			name = Frameworks;
-			path = ../../Frameworks/PredixSDK.framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +114,7 @@
 				4F9489E11F2BF3FE008B9AF8 /* Sources */,
 				4F9489E21F2BF3FE008B9AF8 /* Frameworks */,
 				4F9489E31F2BF3FE008B9AF8 /* Resources */,
-				4FC3828E1F312DF5007C1DFB /* Embed Frameworks */,
+				E881992B1FDF390800F51682 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

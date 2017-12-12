@@ -5,12 +5,15 @@
       location = "group:GettingStarted/GettingStarted.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Authentication/NativeAuthenticationDemo/NativeAuthenticationDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Authentication/UAAWebLoginDemo/UAAWebLoginDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Authentication/SafariViewControllerDemo/SafariViewControllerDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Authentication/NativeAuthenticationDemo/NativeAuthenticationDemo.xcodeproj">
+      location = "group:OnlineAPI/OnlineAPIDemo.xcodeproj">
    </FileRef>
 </Workspace>
