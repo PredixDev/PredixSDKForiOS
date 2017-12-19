@@ -1,0 +1,25 @@
+#xcode specific
+build/*
+*/build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.perspective
+*.perspectivev3
+*~.nib
+project.pbxproj.sav
+.dat*
+xcuserdata
+project.xcworkspace
+
+ 
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+DerivedData
+
+## appcode files
+.idea/
