@@ -16,4 +16,7 @@
    <FileRef
       location = "group:OnlineAPI/OnlineAPIDemo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TimeSeriesAPI/TimeSeriesAPIDemo.xcodeproj">
+   </FileRef>
 </Workspace>
