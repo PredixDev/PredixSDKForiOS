@@ -1,8 +1,4 @@
 //
-//  ViewController.swift
-//  PredixMobileSVCDemo
-//
-//  Created by Johns, Andy (GE Corporate) on 7/28/17.
 //  Copyright © 2017 GE. All rights reserved.
 //
 
