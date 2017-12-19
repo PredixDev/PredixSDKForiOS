@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
    <Group
       location = "group:GettingStarted"
       name = "GettingStarted">
@@ -11,6 +14,9 @@
    <Group
       location = "group:Authentication"
       name = "Authentication">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
       <Group
          location = "group:NativeAuthenticationDemo"
          name = "NativeAuthenticationDemo">
@@ -40,9 +46,6 @@
          </FileRef>
       </Group>
    </Group>
-   <FileRef
-      location = "group:Authentication/README.md">
-   </FileRef>
    <Group
       location = "group:OnlineAPI"
       name = "OnlineAPI">
