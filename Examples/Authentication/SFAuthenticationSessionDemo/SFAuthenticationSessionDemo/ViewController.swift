@@ -61,11 +61,11 @@ class ViewController: UIViewController {
 
         // Associate a RefreshAuthenticationHandler -- in this case our refresh handler is design to work with UAA.
         handler.refreshAuthenticationHandler = UAARefreshAuthenticationHandler()
-        
+
         //associate our OnlineAuthenticationHandler with the AuthenticationManager
         manager.onlineAuthenticationHandler = handler
         handler.manager = manager
-        
+
         //associate an AuthorizationHandler with the AuthenticationManager
         manager.authorizationHandler = UAAAuthorizationHandler()
 

@@ -1,5 +1,4 @@
 import UIKit
-import PredixSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,22 +7,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var checkAuthRedirect: ((URL) -> (Bool))?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        //set trace logging for demo
-        Logger.shared.loggerLevel = .trace
-//
-//        if (PredixMobilityConfiguration.serverEndpointURL?.host ?? "my_predix_endpoint") == "my_predix_endpoint" {
-//            let alert = UIAlertController(title: "Configuration Required", message: "This demo requires the server url, and client id/secret to be populated in the project's Info.plist file.", preferredStyle: .alert)
-//
-//            DispatchQueue.main.async {
-//                self.window?.rootViewController?.present(alert, animated: true, completion: nil)
-//            }
-//            return false
-//        }
-
+        // Override point for customization after application launch.
         return true
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
 
         // iOS will call this method when a URL matching our login_redirect is detected.
 

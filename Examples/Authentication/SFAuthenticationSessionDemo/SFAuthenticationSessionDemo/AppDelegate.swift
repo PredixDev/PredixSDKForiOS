@@ -1,19 +1,9 @@
-//
-//  AppDelegate.swift
-//  PredixMobileSVCDemo
-//
-//  Created by Johns, Andy (GE Corporate) on 7/28/17.
-//  Copyright © 2017 GE. All rights reserved.
-//
-
 import UIKit
-import PredixSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var checkAuthRedirect: ((URL) -> (Bool))?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

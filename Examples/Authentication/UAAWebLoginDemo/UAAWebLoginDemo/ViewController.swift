@@ -38,13 +38,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
-
+        Logger.shared.loggerLevel = .trace
         self.loginResult.text = ""
         self.userInfo.text = ""
 
+        let authenticationURL = URL(string: "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io")!
+        Reachability.sharedInstance = Reachability(configuration: Reachability.ReachabilityConfiguration(authorizationURL: authenticationURL))
+        
         // create an AuthenticationManagerConfiguration, and load associated UAA endpoint from our Predix Mobile server endpoint
         var config = AuthenticationManagerConfiguration()
-        config.baseURL = URL(string: "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io")!
+        config.baseURL = authenticationURL
 
         // Client Id and Client secret are are loaded from Info.plist in this example
         //config.clientId = <<my UAA client id>>

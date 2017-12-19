@@ -24,3 +24,5 @@ DerivedData
 ## AppCode files to ignore
 .idea/
 
+## Don't commit the framework in Examples
+Examples/Frameworks/*.framework

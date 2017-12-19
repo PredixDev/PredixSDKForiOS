@@ -101,7 +101,7 @@ class ViewController: UIViewController {
 }
 
 //BrowserBasedAuthenticationHandlerDelegate methods
-extension ViewController : BrowserBasedAuthenticationHandlerDelegate {
+extension ViewController: BrowserBasedAuthenticationHandlerDelegate {
 
     func authenticationHandler(_ authenticationHandler: AuthenticationHandler, loadWebAuthenticationUrl url: URL, shouldFollowRedirect: @escaping (URL) -> (Bool)) {
 
@@ -110,8 +110,8 @@ extension ViewController : BrowserBasedAuthenticationHandlerDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.checkAuthRedirect = shouldFollowRedirect
         self.createAndShowSVC(url)
     }
-    
-    public func authenticationHandler(_ authenticationHandler: PredixSDK.AuthenticationHandler, willStoreQueryParameters queryStringInfo: [String : String]) -> [String : Any] {
+
+    public func authenticationHandler(_ authenticationHandler: PredixSDK.AuthenticationHandler, willStoreQueryParameters queryStringInfo: [String: String]) -> [String: Any] {
         print("did we get here?")
         return queryStringInfo
     }

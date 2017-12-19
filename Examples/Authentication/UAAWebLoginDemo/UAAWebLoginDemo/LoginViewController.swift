@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController : BrowserBasedAuthenticationHandlerDelegate {
+extension LoginViewController: BrowserBasedAuthenticationHandlerDelegate {
     func authenticationHandler(_ authenticationHandler: AuthenticationHandler, loadWebAuthenticationUrl url: URL, shouldFollowRedirect: @escaping (URL) -> (Bool)) {
 
         self.webView.loadRequest(URLRequest(url: url))

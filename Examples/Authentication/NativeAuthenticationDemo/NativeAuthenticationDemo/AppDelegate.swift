@@ -1,5 +1,4 @@
 import UIKit
-import PredixSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,19 +7,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-//        set trace logging for demo
-//        Logger.shared.loggerLevel = .trace
-//
-//        if (PredixMobilityConfiguration.serverEndpointURL?.host ?? "my_predix_endpoint") == "my_predix_endpoint" {
-//            let alert = UIAlertController(title: "Configuration Required", message: "This demo requires the server url, and client id/secret to be populated in the project's Info.plist file.", preferredStyle: .alert)
-//
-//            DispatchQueue.main.async {
-//                self.window?.rootViewController?.present(alert, animated: true, completion: nil)
-//            }
-//            return false
-//        }
-
         return true
     }
 
