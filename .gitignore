@@ -1,25 +1,28 @@
-#xcode specific
-build/*
-*/build/*
+# Xcode
+#
+build/
 *.pbxuser
-*.mode2v3
+!default.pbxuser
 *.mode1v3
-*.perspective
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
 *.perspectivev3
-*~.nib
-project.pbxproj.sav
-.dat*
+!default.perspectivev3
 xcuserdata
-project.xcworkspace
-
- 
-## generic files to ignore
-*~
-*.lock
-*.DS_Store
-*.swp
-*.out
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
 DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.gcda
+*.gcno
+*.log
 
-## appcode files
+## AppCode files to ignore
 .idea/
+
+## Don't commit the framework in Examples
+Examples/Frameworks/*.framework

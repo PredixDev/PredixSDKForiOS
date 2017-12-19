@@ -1,0 +1,2 @@
+Before using these examples you need to download the latest version of the PredixSDKForiOS
+and copy the PredixSDK.framework file to this folder.

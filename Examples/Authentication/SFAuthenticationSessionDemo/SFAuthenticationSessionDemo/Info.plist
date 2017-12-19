@@ -54,9 +54,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>client_id</key>
-	<string>NativeClient</string>
-	<key>client_secret</key>
-	<string>test123</string>
 </dict>
 </plist>

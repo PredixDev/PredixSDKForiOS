@@ -1,3 +1,7 @@
+//
+//  Copyright © 2017 GE. All rights reserved.
+//
+
 import UIKit
 import PredixSDK
 
@@ -13,6 +17,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
