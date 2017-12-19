@@ -6,7 +6,7 @@ Before using these examples you need to download the latest version of the Predi
 
 Unzip the released framework and copy it to the [Frameworks](Frameworks) folder in the [Examples](.) directory.
 
-###Using the Examples
+### Using the Examples
 
 This folder contains many sample projects, you can open indiviual projects in Xcode, or you can open all the examples using the workspace file, [PredixSDKForiOSExamples](PredixSDKForiOSExamples.xcworkspace)
 

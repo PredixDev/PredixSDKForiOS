@@ -1,4 +1,4 @@
-##Configuring UAA for Web-based Mobile App Authentication
+## Configuring UAA for Web-based Mobile App Authentication
 
 Mobile Apps using web-based authentication often need to use the `authorization_code` grant type. With this grant type, you need to configure a redirect URI that the web browser will redirect to after successful authentication. The mobile operating systeem needs to recognize this redirect is related to the Mobile App, rather than just being a new page the browser should load. Usually this is accomplished by using a non-http(s) redirect schemes. The Mobile Application registers this scheme with the operating system, thus the Mobile device knows that when it encounters this scheme, it should allow the Mobile App to handle it. Configuring Predix UAA to use a non-http(s) scheme is possible, but unfortunately at this time is not supported by the UAA web interface; the UAA CLI is needed. The steps required to add a non-http(s) redirect URI are as follows:
 
