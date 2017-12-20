@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fetchTags(_ sender: Any) {
-        
         self.timeSeriesManager?.fetchTagNames { (tags, error) in
             if let tagNames = tags {
                 tagNamesTextView.text = tagNames.joined(separator: ",")
@@ -33,7 +32,6 @@ class ViewController: UIViewController {
                 tagNamesTextView.text = "unknown issue fetching tags"
             }
         }
-        
     }
     
     @IBAction func fetchDataPoints(_ sender: Any) {
@@ -58,8 +56,5 @@ class ViewController: UIViewController {
                 dataPointsTextView.text = "unknown issue fetching data points"
             }
         }
-        
     }
-    
 }
-
