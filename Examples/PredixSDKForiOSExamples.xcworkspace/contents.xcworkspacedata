@@ -2,21 +2,59 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GettingStarted/GettingStarted.xcodeproj">
+      location = "group:README.md">
    </FileRef>
-   <FileRef
-      location = "group:Authentication/NativeAuthenticationDemo/NativeAuthenticationDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Authentication/UAAWebLoginDemo/UAAWebLoginDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Authentication/SafariViewControllerDemo/SafariViewControllerDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:OnlineAPI/OnlineAPIDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:TimeSeriesAPI/TimeSeriesAPIDemo.xcodeproj">
-   </FileRef>
+   <Group
+      location = "group:GettingStarted"
+      name = "GettingStarted">
+      <FileRef
+         location = "group:GettingStarted.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Authentication"
+      name = "Authentication">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <Group
+         location = "group:NativeAuthenticationDemo"
+         name = "NativeAuthenticationDemo">
+         <FileRef
+            location = "group:NativeAuthenticationDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SafariViewControllerDemo"
+         name = "SafariViewControllerDemo">
+         <FileRef
+            location = "group:SafariViewControllerDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SFAuthenticationSessionDemo"
+         name = "SFAuthenticationSessionDemo">
+         <FileRef
+            location = "group:SFAuthenticationSessionDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UAAWebLoginDemo"
+         name = "UAAWebLoginDemo">
+         <FileRef
+            location = "group:UAAWebLoginDemo.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:OnlineAPI"
+      name = "OnlineAPI">
+      <Group
+         location = "group:OnlineAPIDemo"
+         name = "OnlineAPIDemo">
+         <FileRef
+            location = "group:OnlineAPIDemo.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>
