@@ -24,12 +24,14 @@ class ViewController: UIViewController {
     
     @IBAction func fetchTags(_ sender: Any) {
         self.timeSeriesManager?.fetchTagNames { (tags, error) in
-            if let tagNames = tags {
-                tagNamesTextView.text = tagNames.joined(separator: ",")
-            } else if let anError = error {
-                tagNamesTextView.text = error?.localizedDescription
-            } else {
-                tagNamesTextView.text = "unknown issue fetching tags"
+            DispatchQueue.main.async {
+                if tags.count > 0 {
+                    self.tagNamesTextView.text = tags.joined(separator: ",")
+                } else if let anError = error {
+                    self.tagNamesTextView.text = anError.localizedDescription
+                } else {
+                    self.tagNamesTextView.text = "unknown issue fetching tags"
+                }
             }
         }
     }
@@ -40,20 +42,28 @@ class ViewController: UIViewController {
             return
         }
         
-        let dataPointsRequest = DataPointRequest(tagNames: tagNames)
+        //convert the array of substrings into strings
+        var tagNameStrings = [String]()
+        for tagName in tagNames {
+            tagNameStrings.append(String(tagName))
+        }
+        
+        let dataPointsRequest = LatestDataPointRequest(tagNames: tagNameStrings)
         self.timeSeriesManager?.fetchLatestDataPoints(request: dataPointsRequest) { (results, error) in
-            if let anError = error {
-                dataPointsTextView.text = error?.localizedDescription
-            } else if let dataPoints = results?.dataPoints {
-                var responseString = ""
-                for dataPoint in dataPoints {
-                    responseString = responseString + "------------------------------------------\n"
-                    responseString = responseString + "\(dataPoint.tagName): \(dataPoint.results)\n"
-                    responseString = responseString + "------------------------------------------\n"
+            DispatchQueue.main.async {
+                if let anError = error {
+                    self.dataPointsTextView.text = anError.localizedDescription
+                } else if let dataPoints = results?.dataPoints {
+                    var responseString = ""
+                    for dataPoint in dataPoints {
+                        responseString += responseString + "------------------------------------------\n"
+                        responseString += responseString + "\(dataPoint.tagName): \(String(describing: dataPoint.results))\n"
+                        responseString += responseString + "------------------------------------------\n"
+                    }
+                    self.dataPointsTextView.text = responseString
+                } else {
+                    self.dataPointsTextView.text = "unknown issue fetching data points"
                 }
-                dataPointsTextView.text = responseString
-            } else {
-                dataPointsTextView.text = "unknown issue fetching data points"
             }
         }
     }
