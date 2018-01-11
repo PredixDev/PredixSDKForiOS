@@ -48,17 +48,18 @@ class ViewController: UIViewController {
             tagNameStrings.append(String(tagName))
         }
         
-        let dataPointsRequest = LatestDataPointRequest(tagNames: tagNameStrings)
-        self.timeSeriesManager?.fetchLatestDataPoints(request: dataPointsRequest) { (results, error) in
+        //A Time Range lets you specify a start and an end.  0... means all data since epoc ms time 0 (since 1970).  An example would be if you wanted all data from 2 years ago to 1 year ago you would use 63113852000...31556926000
+        let dataPointsRequest = DataPointRequest(tagNames: tagNameStrings, timeRange: TimeRange(0...))
+        self.timeSeriesManager?.fetchDataPoints(request: dataPointsRequest) { (results, error) in
             DispatchQueue.main.async {
                 if let anError = error {
                     self.dataPointsTextView.text = anError.localizedDescription
                 } else if let dataPoints = results?.dataPoints {
                     var responseString = ""
                     for dataPoint in dataPoints {
-                        responseString += responseString + "------------------------------------------\n"
-                        responseString += responseString + "\(dataPoint.tagName): \(String(describing: dataPoint.results))\n"
-                        responseString += responseString + "------------------------------------------\n"
+                        responseString = responseString + "------------------------------------------\n"
+                        responseString = responseString + "\(dataPoint.tagName): \(String(describing: dataPoint.results))\n"
+                        responseString = responseString + "------------------------------------------\n"
                     }
                     self.dataPointsTextView.text = responseString
                 } else {
