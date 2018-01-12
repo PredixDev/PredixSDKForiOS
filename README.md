@@ -1,4 +1,4 @@
-# PredixSDKForiOS (Beta)
+# PredixSDKForiOS
 
 The Predix SDK For iOS is a comprehensive suite of tools, frameworks, and source examples that enables you to build iOS and MacOS applications for the Industrial Internet of Things (IIoT).
 
