@@ -337,7 +337,7 @@
                 <a class="nav-group-task-link" href="../Structs/AssetManagerConfiguration.html">AssetManagerConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:9PredixSDK10AssetQueryV">AssetQuery</a>
+                <a class="nav-group-task-link" href="../Structs/AssetQuery.html">AssetQuery</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
@@ -442,21 +442,21 @@
 <p>The TimeSeriesManager is intended to work with the Predix Cloud Time Series service, for more information please see the <a href="https://docs.predix.io/en-US/content/service/data_management/time_series/">Time Series service documentation</a>.</p>
 
 <p><strong>Example usage:</strong></p>
+<pre class="highlight plaintext"><code>   // First, create a TimeSeriesManagerConfiguration and populate the configuration with your Time Series service information.
+   var config : TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration()
+   config.baseUrl = "https://&lt;your Time Series service host&gt;"
+   config.predixZoneId = "&lt;your ZoneID used for the Time Series Service&gt;"
+   config.UAAClientId = "&lt;UAA clinet ID for the Time Series Service&gt;"
+   config.UAAClientSecret = "&lt;UAA secret ID for the Time Series Service&gt;"
 
-<p>// First, create a TimeSeriesManagerConfiguration and populate the configuration with your Time Series service information.
-var config : TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration()
-config.baseUrl = <q>https://<your Time Series service host></q>
-config.predixZoneId = <q><your ZoneID used for the Time Series Service></q>
-config.UAAClientId = <q><UAA clinet ID for the Time Series Service></q>
-config.UAAClientSecret = <q><UAA secret ID for the Time Series Service></q></p>
+   // Next, create a TimeSeriesManager with the TimeSeriesManagerConfiguration
+   let manager = TimeSeriesManager(configuration: config)
 
-<p>// Next, create a TimeSeriesManager with the TimeSeriesManagerConfiguration
-let manager = TimeSeriesManager(configuration: config)</p>
-
-<p>// Then call the API. The completionHandler will be called when the process finishes.
-self.getManager().getTags(completionHandler:{(tags,  error) in
-   &hellip;
-}</p>
+   // Then call the API. The completionHandler will be called when the process finishes.
+   self.getManager().getTags(completionHandler:{(tags,  error) in
+   ...
+}
+</code></pre>
 
           </div>
         </section>
@@ -507,10 +507,6 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                       <div class="abstract">
                         <p>Initializes the TimeSeriesManager with a the time series configuration for the Time Series Service</p>
 
-<ul>
-<li>configuration: A TimeSeriesManagerConfiguration for this manager</li>
-</ul>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -519,6 +515,25 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                           <pre class="highlight"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Structs/TimeSeriesManagerConfiguration.html">TimeSeriesManagerConfiguration</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A TimeSeriesManagerConfiguration for this manager</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -608,13 +623,6 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                       <div class="abstract">
                         <p>Fetches datapoints for a given DataPointRequest</p>
 
-<ul>
-<li>request: A DataPointRequest that instructs fetch about the type of Time Series data to retrieve</li>
-<li>completionHandler: closure to call when the fetch has completed</li>
-<li>timeSeriesResponse: The reponse for the given DataPointRequest.  The DataPointResponse will be nil if an error occurs</li>
-<li>error: In the event of an error the error parameter will contain information about why the fetch failed</li>
-</ul>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -623,6 +631,61 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchDataPoints</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/DataPointRequest.html">DataPointRequest</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span> <span class="n">_</span> <span class="nv">timeSeriesResponse</span><span class="p">:</span> <span class="kt"><a href="../Structs/DataPointResponse.html">DataPointResponse</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A DataPointRequest that instructs fetch about the type of Time Series data to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure to call when the fetch has completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeSeriesResponse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reponse for the given DataPointRequest.  The DataPointResponse will be nil if an error occurs</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>In the event of an error the error parameter will contain information about why the fetch failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -642,13 +705,6 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                       <div class="abstract">
                         <p>Fetches the latest datapoints for a given DataPointRequest</p>
 
-<ul>
-<li>request: A LatestDataPointRequest that instructs fetch about the type of Time Series data to retrieve</li>
-<li>completionHandler: closure to call when the fetch has completed</li>
-<li>timeSeriesResponse: The reponse for the given LatestDataPointRequest.  The DataPointResponse will be nil if an error occurs</li>
-<li>error: In the event of an error the error parameter will contain information about why the fetch failed</li>
-</ul>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -657,6 +713,61 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchLatestDataPoints</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/LatestDataPointRequest.html">LatestDataPointRequest</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span> <span class="n">_</span> <span class="nv">timeSeriesResponse</span><span class="p">:</span> <span class="kt"><a href="../Structs/DataPointResponse.html">DataPointResponse</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A LatestDataPointRequest that instructs fetch about the type of Time Series data to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure to call when the fetch has completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeSeriesResponse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reponse for the given LatestDataPointRequest.  The DataPointResponse will be nil if an error occurs</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>In the event of an error the error parameter will contain information about why the fetch failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -669,7 +780,7 @@ self.getManager().getTags(completionHandler:{(tags,  error) in
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-10)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

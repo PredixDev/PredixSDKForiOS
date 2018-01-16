@@ -336,7 +336,7 @@
                 <a class="nav-group-task-link" href="Structs/AssetManagerConfiguration.html">AssetManagerConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs.html#/s:9PredixSDK10AssetQueryV">AssetQuery</a>
+                <a class="nav-group-task-link" href="Structs/AssetQuery.html">AssetQuery</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
@@ -610,16 +610,18 @@
 
 <p>Groups can be made by providing one or more of the following attribute:</p>
 
-<p><strong>name:</strong> Allows data points to be the name of a property of the data point.  For example you could group data points by there quality by setting name = <q>quality</q>
-<strong>rangeSize:</strong> Is the number of values to place in a group.  For example, a range size of 10 puts measurements between 0-9 in one group, 10-19 in the next group, and so on
-<strong>groupCount:</strong> Defines the maximum number of groups to return.  For example if you set the rangeSize to 1 hour and you set the groupCount to 24 than you would get 24 groups each with an hours worth of data points</p>
+<p><strong>name:</strong> Allows data points to be the name of a property of the data point.  For example you could group data points by there quality by setting name = <q>quality</q></p>
+
+<p><strong>rangeSize:</strong> Is the number of values to place in a group.  For example, a range size of 10 puts measurements between 0-9 in one group, 10-19 in the next group, and so on</p>
+
+<p><strong>groupCount:</strong> Defines the maximum number of groups to return.  For example if you set the rangeSize to 1 hour and you set the groupCount to 24 than you would get 24 groups each with an hours worth of data points</p>
 
 <p>Example of grouping by quality:</p>
-<pre class="highlight plaintext"><code>let group = TagGroup
-group.name = "quality"
-group.rangeSize = 4
-group.groupCount = 4
-...
+<pre class="highlight plaintext"><code>   let group = TagGroup
+   group.name = "quality"
+   group.rangeSize = 4
+   group.groupCount = 4
+   ...
 </code></pre>
 
 <p>The above example would give you 4 groups of quality (Bad, Uncertain, Not Acceptable and Good).  The first group would contain all quality values for bad data points, the second group would contain all the data points for uncertain data points and so on.</p>
@@ -657,9 +659,9 @@ group.groupCount = 4
 <p>Queries can combined multiple elements or by using a single one.  For example a TagQuery could specify a grouping with an aggregation and limit of how many data points to return or it would simply be a single item like limit to the last two data points.</p>
 
 <p>Example of a query that would return tags grouped by their quality level and limited to the last 3 values</p>
-<pre class="highlight plaintext"><code>let tagGroup = TagGroup(name: "quality")
-let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
-...
+<pre class="highlight plaintext"><code>   let tagGroup = TagGroup(name: "quality")
+   let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
+   ...
 </code></pre>
 
                         <a href="Structs/TagQuery.html" class="slightly-smaller">See more</a>
@@ -1033,15 +1035,15 @@ let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
 <p>TimeRange can work with partial and close ranges</p>
 
 <p>An example of a closed range would be requesting all times from 0 to 2</p>
-<pre class="highlight plaintext"><code>let timeRange = TimeRange(0...2)
+<pre class="highlight plaintext"><code>   let timeRange = TimeRange(0...2)
 </code></pre>
 
 <p>An example of a partialRange would be asking for everything up to 2</p>
-<pre class="highlight plaintext"><code>let timeRange = TimeRange(...2)
+<pre class="highlight plaintext"><code>   let timeRange = TimeRange(...2)
 </code></pre>
 
 <p>or anything from 2</p>
-<pre class="highlight plaintext"><code>let timeRange = TimeRange(2...)
+<pre class="highlight plaintext"><code>   let timeRange = TimeRange(2...)
 </code></pre>
 
                         <a href="Structs/TimeRange.html" class="slightly-smaller">See more</a>
@@ -1074,8 +1076,8 @@ let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
 
 <p>The DataPointRequest allows you to setup a request that can be used to fetch the datapoints for a set of tags and tag attributes.</p>
 
-<p>Basic Usage:</p>
-<pre class="highlight plaintext"><code>let dataPointRequest = DataPointRequest(["sensorTag1"])
+<p><strong>Basic Usage:</strong></p>
+<pre class="highlight plaintext"><code>   let dataPointRequest = DataPointRequest(["sensorTag1"])
 </code></pre>
 
 <p>In this example a request would be created that when fetched would return all data points for <em>sensorTag1</em></p>
@@ -1198,6 +1200,7 @@ let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
                       <div class="abstract">
                         <p>Request Parameters to fetch selected number of Assets (filtering criteria).</p>
 
+                        <a href="Structs/AssetQuery.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1277,7 +1280,7 @@ let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-10)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

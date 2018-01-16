@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TimeRange Structure Reference</title>
+    <title>AssetQuery Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/TimeRange" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/AssetQuery" class="dashAnchor"></a>
 
-    <a title="TimeRange Structure Reference"></a>
+    <a title="AssetQuery Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">PredixSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      TimeRange Structure Reference
+      AssetQuery Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -430,28 +430,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>TimeRange</h1>
+            <h1>AssetQuery</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeRange</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssetQuery</span></code></pre>
 
                 </div>
               </div>
-            <p>Specifies a range of time that would allow you to request data points that happened within that time range.  The operation works much like the Swift Range object.</p>
-
-<p>TimeRange can work with partial and close ranges</p>
-
-<p>An example of a closed range would be requesting all times from 0 to 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(0...2)
-</code></pre>
-
-<p>An example of a partialRange would be asking for everything up to 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(...2)
-</code></pre>
-
-<p>or anything from 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(2...)
-</code></pre>
+            <p>Request Parameters to fetch selected number of Assets (filtering criteria).</p>
 
           </div>
         </section>
@@ -463,9 +449,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK9TimeRangeV5startSdv"></a>
-                    <a name="//apple_ref/swift/Property/start" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK9TimeRangeV5startSdv">start</a>
+                    <a name="/s:9PredixSDK10AssetQueryVACSSSg6fields_AD6filterSi8pageSizetcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(fields:filter:pageSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK10AssetQueryVACSSSg6fields_AD6filterSi8pageSizetcfc">init(fields:filter:pageSize:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -473,14 +459,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The start value of the time range</p>
+                        <p>Constructs an instance of the query</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">fields</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -490,9 +476,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK9TimeRangeV3endSdSgv"></a>
-                    <a name="//apple_ref/swift/Property/end" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK9TimeRangeV3endSdSgv">end</a>
+                    <a name="/s:9PredixSDK10AssetQueryV6fieldsSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/fields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK10AssetQueryV6fieldsSSSgv">fields</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -500,14 +486,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The end value of the time range</p>
+                        <p>Retrieves selected fields of a large object or a collection of large objects. For example, to retrieve a few attributes from an asset with many attributes, indicate the selected attributes in the fields clause.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fields</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -517,9 +503,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK9TimeRangeVACs07PartialD4FromVySdGcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK9TimeRangeVACs07PartialD4FromVySdGcfc">init(_:)</a>
+                    <a name="/s:9PredixSDK10AssetQueryV6filterSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/filter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK10AssetQueryV6filterSSSgv">filter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -527,14 +513,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an instance equivalent to the given range.</p>
+                        <p>Use Graph Expression Language (GEL) in the filter clause of a GET request to filter the data that appears in results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">PartialRangeFrom</span><span class="o">&lt;</span><span class="kt">TimeInterval</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -544,9 +530,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK9TimeRangeVACs07PartialD7ThroughVySdGcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK9TimeRangeVACs07PartialD7ThroughVySdGcfc">init(_:)</a>
+                    <a name="/s:9PredixSDK10AssetQueryV8pageSizeSiv"></a>
+                    <a name="//apple_ref/swift/Property/pageSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK10AssetQueryV8pageSizeSiv">pageSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -554,41 +540,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an instance equivalent to the given range.</p>
+                        <p>Defines the number of entities to be returned per page (default is 100). Maximum pageSize is 1000.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">PartialRangeThrough</span><span class="o">&lt;</span><span class="kt">TimeInterval</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK9TimeRangeVACs06ClosedD0VySdGcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK9TimeRangeVACs06ClosedD0VySdGcfc">init(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an instance equivalent to the given range.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">TimeInterval</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1">// max limit is 1000 and default is 100</span></code></pre>
 
                         </div>
                       </div>
