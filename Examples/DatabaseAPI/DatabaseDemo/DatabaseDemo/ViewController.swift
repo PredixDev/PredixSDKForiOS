@@ -80,7 +80,7 @@ class ViewController: UITableViewController {
     
     private func createSampleData() -> [String] {
 
-        return ["Papaya", "Peach", "Pitaya", "Passion fruit", "Banana", "Pear", "Mango", "Cherry", "Plum", "Apricot", "Lemon", "Avocado", "Fig", "Lychee", "Coconut", "Cantaloupe", "Tangerine", "Clementine", "Pineapple", "Grape", "Grapefruit", "Pomelo", "Orange", "Date palm", "Watermelon", "Kumquat", "Breadfruit", "Blueberry", "Honeydew", "Lime", "Raspberry", "Strawberry", "Blueberry"]
+        return ["Apple", "Papaya", "Peach", "Pitaya", "Passion fruit", "Banana", "Pear", "Mango", "Cherry", "Plum", "Apricot", "Lemon", "Avocado", "Fig", "Lychee", "Coconut", "Cantaloupe", "Tangerine", "Clementine", "Pineapple", "Grape", "Grapefruit", "Pomelo", "Orange", "Date palm", "Watermelon", "Kumquat", "Breadfruit", "Blueberry", "Honeydew", "Lime", "Raspberry", "Strawberry", "Tomato", "Guava", "Kiwi"].sorted()
     }
 }
 
@@ -102,7 +102,6 @@ extension ViewController {
             
             // when we have the document, update the cell text label with the data from the document
             cell.textLabel?.text = document?[fruitNameKey] as? String
-            cell.detailTextLabel?.text = document?[notesKey] as? String
             cell.setNeedsLayout()
         }
         

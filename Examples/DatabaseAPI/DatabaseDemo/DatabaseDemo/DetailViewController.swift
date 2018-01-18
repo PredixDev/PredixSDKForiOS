@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
     @IBOutlet var createDateLabel: UILabel!
     @IBOutlet var identifierLabel: UILabel!
     @IBOutlet var updateDateLabel: UILabel!
-    @IBOutlet var noteText: UITextField!
+    @IBOutlet var noteText: UITextView!
     @IBOutlet var fruitNameLabel: UILabel!
     
     override func viewDidLoad() {
