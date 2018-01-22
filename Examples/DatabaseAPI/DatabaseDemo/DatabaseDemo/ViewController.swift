@@ -25,12 +25,12 @@ class ViewController: UITableViewController {
             // Open the database
             self.database = try Database.open(with: Database.OpenDatabaseConfiguration.default, create: true)
             
-            // see if we have document "0", if so we've already loaded the sample data
+            // see if we have document "0", if so we've already created the sample data
             self.database?.fetchDocument("0", completionHandler: { document in
                 if document == nil {
-                    self.loadSampleData()
+                    self.createSampleDocuments()
                 } else {
-                    self.rowCount = self.createSampleData().count
+                    self.rowCount = self.createFruitList().count
                     self.tableView.reloadData()
                 }
                 
@@ -49,9 +49,9 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func loadSampleData() {
+    func createSampleDocuments() {
         
-        let sampleData = createSampleData()
+        let sampleData = createFruitList()
         
         self.rowCount = sampleData.count
         
@@ -63,7 +63,7 @@ class ViewController: UITableViewController {
             
             // create a simple document.
             // The id of the document will be the row number,
-            // the only data in the document will be the sample data item.
+            // the only data in the document will be the fruit name, and an empty "notes" fielda.
             let document: Document = ["id": "\(rowIndex)", fruitNameKey: item, notesKey: ""]
 
             // add the document to the database
@@ -78,7 +78,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    private func createSampleData() -> [String] {
+    private func createFruitList() -> [String] {
 
         return ["Apple", "Papaya", "Peach", "Pitaya", "Passion fruit", "Banana", "Pear", "Mango", "Cherry", "Plum", "Apricot", "Lemon", "Avocado", "Fig", "Lychee", "Coconut", "Cantaloupe", "Tangerine", "Clementine", "Pineapple", "Grape", "Grapefruit", "Pomelo", "Orange", "Date palm", "Watermelon", "Kumquat", "Breadfruit", "Blueberry", "Honeydew", "Lime", "Raspberry", "Strawberry", "Tomato", "Guava", "Kiwi"].sorted()
     }
