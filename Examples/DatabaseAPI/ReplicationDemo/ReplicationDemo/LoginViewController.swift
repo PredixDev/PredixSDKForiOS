@@ -40,7 +40,10 @@ class LoginViewController: UIViewController {
     
     func setupDatabase() {
         
-        // for this demo we're showing replication from the server. We'll ensure the local database doesn't exist first.
+        // For this demo we're showing replication from the server, so we'll ensure
+        // the local database doesn't exist first.
+        //
+        // Obviously in a real application you wouldn't delete the database every launch.
         Database.delete(Database.OpenDatabaseConfiguration.default)
         
         // now open the database normally

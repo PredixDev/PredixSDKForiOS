@@ -60,22 +60,28 @@
    <Group
       location = "group:DatabaseAPI"
       name = "DatabaseAPI">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
       <Group
-         location = "group:DatabaseDemo"
+         location = "group:/Users/212420878/Development/PredixSDKForiOS/Examples/DatabaseAPI/DatabaseDemo"
          name = "DatabaseDemo">
          <FileRef
             location = "group:DatabaseDemo.xcodeproj">
          </FileRef>
       </Group>
       <Group
-         location = "group:IndexAndQueryDemo"
-         name = "IndexAndQueryDemo">
-      </Group>
-      <Group
          location = "group:ReplicationDemo"
          name = "ReplicationDemo">
          <FileRef
             location = "group:ReplicationDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:IndexAndQueryDemo"
+         name = "IndexAndQueryDemo">
+         <FileRef
+            location = "group:IndexAndQueryDemo.xcodeproj">
          </FileRef>
       </Group>
    </Group>
