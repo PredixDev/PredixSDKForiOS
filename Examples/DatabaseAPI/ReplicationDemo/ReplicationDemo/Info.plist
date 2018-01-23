@@ -42,7 +42,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>server_url</key>
-	<string>z0ntgn.run.aws-usw02-pr.ice.predix.io</string>
+	<string>predixsdkforiosexamplesync.run.aws-usw02-pr.ice.predix.io</string>
 	<key>client_id</key>
 	<string>NativeClient</string>
 	<key>client_secret</key>
