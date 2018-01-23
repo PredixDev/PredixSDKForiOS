@@ -73,5 +73,6 @@ extension LoginViewController: ServiceBasedAuthenticationHandlerDelegate {
     public func authenticationHandler(_ authenticationHandler: AuthenticationHandler, provideCredentialsWithCompletionHandler completionHandler: @escaping AuthenticationCredentialsProvider) {
         //Set our credential provider so that when we sign in we can pass the username and password from the text fields to the authentication manager
         credentialProvider = completionHandler
+        updateStatusText(message: "Please sign in")
     }
 }
