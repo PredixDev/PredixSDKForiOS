@@ -64,7 +64,7 @@
          location = "group:README.md">
       </FileRef>
       <Group
-         location = "group:/Users/212420878/Development/PredixSDKForiOS/Examples/DatabaseAPI/DatabaseDemo"
+         location = "group:DatabaseDemo"
          name = "DatabaseDemo">
          <FileRef
             location = "group:DatabaseDemo.xcodeproj">
