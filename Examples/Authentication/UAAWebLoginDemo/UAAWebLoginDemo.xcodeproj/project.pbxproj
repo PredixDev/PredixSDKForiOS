@@ -13,6 +13,7 @@
 		4F9489F01F2BF3FF008B9AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9489EF1F2BF3FF008B9AF8 /* Assets.xcassets */; };
 		4F9489F31F2BF3FF008B9AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9489F11F2BF3FF008B9AF8 /* LaunchScreen.storyboard */; };
 		4F948A031F2BF627008B9AF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F948A021F2BF627008B9AF8 /* LoginViewController.swift */; };
+		4FC612C32017E29200489F15 /* ModuleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 4FC612C22017E29200489F15 /* ModuleMaps */; };
 		E88199321FDF395400F51682 /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88199301FDF395200F51682 /* PredixSDK.framework */; };
 		E88199331FDF395400F51682 /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E88199301FDF395200F51682 /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -39,8 +40,8 @@
 		4F9489EF1F2BF3FF008B9AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F9489F21F2BF3FF008B9AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F9489F41F2BF3FF008B9AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F9489FB1F2BF562008B9AF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4F948A021F2BF627008B9AF8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4FC612C22017E29200489F15 /* ModuleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModuleMaps; sourceTree = "<group>"; };
 		E88199301FDF395200F51682 /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +77,7 @@
 		4F9489E71F2BF3FE008B9AF8 /* UAAWebLoginDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4F9489FA1F2BF562008B9AF8 /* CouchbaseLite */,
+				4FC612C22017E29200489F15 /* ModuleMaps */,
 				4F9489E81F2BF3FF008B9AF8 /* AppDelegate.swift */,
 				4F9489EA1F2BF3FF008B9AF8 /* ViewController.swift */,
 				4F948A021F2BF627008B9AF8 /* LoginViewController.swift */,
@@ -86,14 +87,6 @@
 				4F9489F41F2BF3FF008B9AF8 /* Info.plist */,
 			);
 			path = UAAWebLoginDemo;
-			sourceTree = "<group>";
-		};
-		4F9489FA1F2BF562008B9AF8 /* CouchbaseLite */ = {
-			isa = PBXGroup;
-			children = (
-				4F9489FB1F2BF562008B9AF8 /* module.modulemap */,
-			);
-			path = CouchbaseLite;
 			sourceTree = "<group>";
 		};
 		E8A1AC881FDF056C0078A17F /* Frameworks */ = {
@@ -166,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9489F31F2BF3FF008B9AF8 /* LaunchScreen.storyboard in Resources */,
+				4FC612C32017E29200489F15 /* ModuleMaps in Resources */,
 				4F9489F01F2BF3FF008B9AF8 /* Assets.xcassets in Resources */,
 				4F9489EE1F2BF3FF008B9AF8 /* Main.storyboard in Resources */,
 			);
@@ -327,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.UAAWebLoginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -346,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.UAAWebLoginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
