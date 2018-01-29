@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         //config.clientSecret = <<my UAA client secret>>
 
         // we want to enable TouchId usage
-        config.useTouchID = true
+        config.useBiometricAuthentication = true
 
         // Create our AuthenticationManager with our configuration
         let manager = AuthenticationManager(configuration: config)
