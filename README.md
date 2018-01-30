@@ -23,4 +23,4 @@ For all of the features available in the SDK please visit the [Wiki](https://git
 ## Getting Help
 
 - Create a [GitHub Issue](https://github.com/PredixDev/PredixSDKForiOS/issues) in this project
-- Ask on the [Predix Developer Forum](https://forum.predix.io/index.html)
+- Ask a question on the [Predix Developer Forum](https://forum.predix.io/index.html)
