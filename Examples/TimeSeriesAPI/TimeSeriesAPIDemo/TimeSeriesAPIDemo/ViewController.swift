@@ -13,20 +13,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         //Create a Time Sereies configuration that contains the details about the Time Series instance we are tageting.
         var config: TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration()
-
         //The host for the Time Series Service
         config.hostUrl = "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io"
         //The Zone ID for the Time Series Service
         config.predixZoneId = "e52ee381-897a-4313-80da-6ca2f0a17bd4"
-        config.UAABaseUrl = "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io"
-        config.UAAClientId = "NativeClient"
-        config.UAAClientSecret = "test123"
 
         //Create a Time Series Manager that will be used to fetch Time Series data.
         self.timeSeriesManager = TimeSeriesManager(configuration: config)
     }
     
     @IBAction func fetchTags(_ sender: Any) {
+        self.tagNamesTextView.text = "Fetching tags..."
         //Fetch all the tags that are available for the configured Time Series Service
         self.timeSeriesManager?.fetchTagNames { (tags, error) in
             DispatchQueue.main.async {

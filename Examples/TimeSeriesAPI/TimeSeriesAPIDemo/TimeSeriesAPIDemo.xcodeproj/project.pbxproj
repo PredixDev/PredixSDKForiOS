@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E81C9512201FF56A00EC5945 /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81C9511201FF56A00EC5945 /* PredixSDK.framework */; };
 		E81C9513201FF56A00EC5945 /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E81C9511201FF56A00EC5945 /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E869681920210E500087C968 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869681820210E500087C968 /* LoginViewController.swift */; };
 		E88199961FE1FF9E00F51682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88199951FE1FF9E00F51682 /* AppDelegate.swift */; };
 		E88199981FE1FF9E00F51682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88199971FE1FF9E00F51682 /* ViewController.swift */; };
 		E881999B1FE1FF9E00F51682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88199991FE1FF9E00F51682 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		E81C9511201FF56A00EC5945 /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
+		E869681820210E500087C968 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E88199921FE1FF9E00F51682 /* TimeSeriesAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeSeriesAPIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88199951FE1FF9E00F51682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E88199971FE1FF9E00F51682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				E88199AD1FE2007100F51682 /* CouchbaseLite */,
 				E88199951FE1FF9E00F51682 /* AppDelegate.swift */,
+				E869681820210E500087C968 /* LoginViewController.swift */,
 				E88199971FE1FF9E00F51682 /* ViewController.swift */,
 				E88199991FE1FF9E00F51682 /* Main.storyboard */,
 				E881999C1FE1FF9E00F51682 /* Assets.xcassets */,
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E869681920210E500087C968 /* LoginViewController.swift in Sources */,
 				E88199981FE1FF9E00F51682 /* ViewController.swift in Sources */,
 				E88199961FE1FF9E00F51682 /* AppDelegate.swift in Sources */,
 			);
