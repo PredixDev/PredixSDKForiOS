@@ -1,7 +1,7 @@
 import UIKit
 import PredixSDK
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     
     private var timeSeriesManager: TimeSeriesManager?
     @IBOutlet weak var tagNamesTextView: UITextView!
@@ -11,18 +11,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Create a Time Sereies configuration that contains the details about the Time Series instance we are tageting.
         var config: TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration()
 
+        //The host for the Time Series Service
         config.hostUrl = "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io"
-        config.predixZoneId = "6a1487bd-afb6-40b8-929c-ca872c958f74"
-        config.UAABaseUrl = "https://3311caf6-6548-4c24-a86c-29ee5c6acc5c.predix-uaa.run.aws-usw02-pr.ice.predix.io"
-        config.UAAClientId = "app_client_id"
-        config.UAAClientSecret = "secret"
+        //The Zone ID for the Time Series Service
+        config.predixZoneId = "e52ee381-897a-4313-80da-6ca2f0a17bd4"
+        config.UAABaseUrl = "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io"
+        config.UAAClientId = "NativeClient"
+        config.UAAClientSecret = "test123"
 
+        //Create a Time Series Manager that will be used to fetch Time Series data.
         self.timeSeriesManager = TimeSeriesManager(configuration: config)
     }
     
     @IBAction func fetchTags(_ sender: Any) {
+        //Fetch all the tags that are available for the configured Time Series Service
         self.timeSeriesManager?.fetchTagNames { (tags, error) in
             DispatchQueue.main.async {
                 if tags.count > 0 {
@@ -30,7 +35,8 @@ class ViewController: UIViewController {
                 } else if let anError = error {
                     self.tagNamesTextView.text = anError.localizedDescription
                 } else {
-                    self.tagNamesTextView.text = "unknown issue fetching tags"
+                    //We didn't get any tags and there were't any errors!
+                    self.tagNamesTextView.text = "No tags available"
                 }
             }
         }
@@ -50,6 +56,7 @@ class ViewController: UIViewController {
         
         //A Time Range lets you specify a start and an end.  0... means all data since epoc ms time 0 (since 1970).  An example would be if you wanted all data from 2 years ago to 1 year ago you would use 63113852000...31556926000
         let dataPointsRequest = DataPointRequest(tagNames: tagNameStrings, timeRange: TimeRange(0...))
+        //Fetch the Time Series data points for the tags specified.
         self.timeSeriesManager?.fetchDataPoints(request: dataPointsRequest) { (results, error) in
             DispatchQueue.main.async {
                 if let anError = error {
@@ -68,4 +75,6 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
 }
