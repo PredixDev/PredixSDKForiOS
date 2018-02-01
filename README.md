@@ -11,6 +11,11 @@ For all of the features available in the SDK please visit the [Wiki](https://git
 - iOS
 - macOS
 
+## Download
+
+- [Latest Release](https://github.com/PredixDev/PredixSDKForiOS/releases/latest)
+- [All Releases](https://github.com/PredixDev/PredixSDKForiOS/releases)
+
 ## Additional Information
 
 - For native Swift documentation specific to iOS/macOS see the [code documentation site](http://predixdev.github.io/PredixSDKForiOS/index.html)
