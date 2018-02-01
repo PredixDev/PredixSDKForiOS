@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  AssetExample
+//  AssetDemo
 //
-//  Created by Jeremy Osterhoudt on 1/25/18.
-//  Copyright © 2018 Jeremy Osterhoudt. All rights reserved.
+//  Created by Jeremy Osterhoudt on 1/30/18.
+//  Copyright © 2018 General Electric. All rights reserved.
 //
 
 import UIKit

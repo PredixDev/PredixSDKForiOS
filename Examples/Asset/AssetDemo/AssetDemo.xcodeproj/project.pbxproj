@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E8242C02201A8E3400B4F73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8242C01201A8E3400B4F73A /* AppDelegate.swift */; };
-		E8242C07201A8E3400B4F73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8242C05201A8E3400B4F73A /* Main.storyboard */; };
-		E8242C09201A8E3400B4F73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8242C08201A8E3400B4F73A /* Assets.xcassets */; };
-		E8242C0C201A8E3400B4F73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8242C0A201A8E3400B4F73A /* LaunchScreen.storyboard */; };
-		E8242C16201A8EB300B4F73A /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8242C14201A8E8B00B4F73A /* PredixSDK.framework */; };
-		E8242C17201A8EB300B4F73A /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8242C14201A8E8B00B4F73A /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E8242C1A201A8F4A00B4F73A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8242C19201A8F4900B4F73A /* LoginViewController.swift */; };
-		E8242C1C201A902400B4F73A /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8242C1B201A902400B4F73A /* AssetViewController.swift */; };
+		E8A875BD20212D350022BA20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A875BC20212D350022BA20 /* AppDelegate.swift */; };
+		E8A875C220212D350022BA20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A875C020212D350022BA20 /* Main.storyboard */; };
+		E8A875C420212D350022BA20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A875C320212D350022BA20 /* Assets.xcassets */; };
+		E8A875C720212D350022BA20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A875C520212D350022BA20 /* LaunchScreen.storyboard */; };
+		E8A875D120212DC40022BA20 /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A875CF20212DBA0022BA20 /* PredixSDK.framework */; };
+		E8A875D220212DC40022BA20 /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8A875CF20212DBA0022BA20 /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8A875D520212E750022BA20 /* ModuleMaps in Resources */ = {isa = PBXBuildFile; fileRef = E8A875D420212E750022BA20 /* ModuleMaps */; };
+		E8A875D720212E960022BA20 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A875D620212E960022BA20 /* AssetViewController.swift */; };
+		E8A875D920212EAB0022BA20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A875D820212EAB0022BA20 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E8242C18201A8EB300B4F73A /* Embed Frameworks */ = {
+		E8A875D320212DC40022BA20 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E8242C17201A8EB300B4F73A /* PredixSDK.framework in Embed Frameworks */,
+				E8A875D220212DC40022BA20 /* PredixSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,64 +33,66 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E8242BFE201A8E3400B4F73A /* AssetExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8242C01201A8E3400B4F73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8242C06201A8E3400B4F73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8242C08201A8E3400B4F73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8242C0B201A8E3400B4F73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8242C0D201A8E3400B4F73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8242C14201A8E8B00B4F73A /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
-		E8242C19201A8F4900B4F73A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E8242C1B201A902400B4F73A /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		E8A875B920212D350022BA20 /* AssetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8A875BC20212D350022BA20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8A875C120212D350022BA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8A875C320212D350022BA20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8A875C620212D350022BA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8A875C820212D360022BA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A875CF20212DBA0022BA20 /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PredixSDK.framework; path = ../../Frameworks/PredixSDK.framework; sourceTree = "<group>"; };
+		E8A875D420212E750022BA20 /* ModuleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModuleMaps; sourceTree = "<group>"; };
+		E8A875D620212E960022BA20 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		E8A875D820212EAB0022BA20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E8242BFB201A8E3400B4F73A /* Frameworks */ = {
+		E8A875B620212D350022BA20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8242C16201A8EB300B4F73A /* PredixSDK.framework in Frameworks */,
+				E8A875D120212DC40022BA20 /* PredixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E8242BF5201A8E3400B4F73A = {
+		E8A875B020212D350022BA20 = {
 			isa = PBXGroup;
 			children = (
-				E8242C13201A8E7100B4F73A /* Frameworks */,
-				E8242C00201A8E3400B4F73A /* AssetExample */,
-				E8242BFF201A8E3400B4F73A /* Products */,
+				E8A875CE20212D970022BA20 /* Frameworks */,
+				E8A875BB20212D350022BA20 /* AssetDemo */,
+				E8A875BA20212D350022BA20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E8242BFF201A8E3400B4F73A /* Products */ = {
+		E8A875BA20212D350022BA20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8242BFE201A8E3400B4F73A /* AssetExample.app */,
+				E8A875B920212D350022BA20 /* AssetDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E8242C00201A8E3400B4F73A /* AssetExample */ = {
+		E8A875BB20212D350022BA20 /* AssetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E8242C01201A8E3400B4F73A /* AppDelegate.swift */,
-				E8242C1B201A902400B4F73A /* AssetViewController.swift */,
-				E8242C19201A8F4900B4F73A /* LoginViewController.swift */,
-				E8242C05201A8E3400B4F73A /* Main.storyboard */,
-				E8242C08201A8E3400B4F73A /* Assets.xcassets */,
-				E8242C0A201A8E3400B4F73A /* LaunchScreen.storyboard */,
-				E8242C0D201A8E3400B4F73A /* Info.plist */,
+				E8A875D420212E750022BA20 /* ModuleMaps */,
+				E8A875BC20212D350022BA20 /* AppDelegate.swift */,
+				E8A875D620212E960022BA20 /* AssetViewController.swift */,
+				E8A875D820212EAB0022BA20 /* LoginViewController.swift */,
+				E8A875C020212D350022BA20 /* Main.storyboard */,
+				E8A875C320212D350022BA20 /* Assets.xcassets */,
+				E8A875C520212D350022BA20 /* LaunchScreen.storyboard */,
+				E8A875C820212D360022BA20 /* Info.plist */,
 			);
-			path = AssetExample;
+			path = AssetDemo;
 			sourceTree = "<group>";
 		};
-		E8242C13201A8E7100B4F73A /* Frameworks */ = {
+		E8A875CE20212D970022BA20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8242C14201A8E8B00B4F73A /* PredixSDK.framework */,
+				E8A875CF20212DBA0022BA20 /* PredixSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,41 +100,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E8242BFD201A8E3400B4F73A /* AssetExample */ = {
+		E8A875B820212D350022BA20 /* AssetDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8242C10201A8E3400B4F73A /* Build configuration list for PBXNativeTarget "AssetExample" */;
+			buildConfigurationList = E8A875CB20212D360022BA20 /* Build configuration list for PBXNativeTarget "AssetDemo" */;
 			buildPhases = (
-				E8242BFA201A8E3400B4F73A /* Sources */,
-				E8242BFB201A8E3400B4F73A /* Frameworks */,
-				E8242BFC201A8E3400B4F73A /* Resources */,
-				E8242C18201A8EB300B4F73A /* Embed Frameworks */,
+				E8A875B520212D350022BA20 /* Sources */,
+				E8A875B620212D350022BA20 /* Frameworks */,
+				E8A875B720212D350022BA20 /* Resources */,
+				E8A875D320212DC40022BA20 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AssetExample;
-			productName = AssetExample;
-			productReference = E8242BFE201A8E3400B4F73A /* AssetExample.app */;
+			name = AssetDemo;
+			productName = AssetDemo;
+			productReference = E8A875B920212D350022BA20 /* AssetDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E8242BF6201A8E3400B4F73A /* Project object */ = {
+		E8A875B120212D350022BA20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Jeremy Osterhoudt";
+				ORGANIZATIONNAME = "General Electric";
 				TargetAttributes = {
-					E8242BFD201A8E3400B4F73A = {
+					E8A875B820212D350022BA20 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = E8242BF9201A8E3400B4F73A /* Build configuration list for PBXProject "AssetExample" */;
+			buildConfigurationList = E8A875B420212D350022BA20 /* Build configuration list for PBXProject "AssetDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,55 +142,56 @@
 				en,
 				Base,
 			);
-			mainGroup = E8242BF5201A8E3400B4F73A;
-			productRefGroup = E8242BFF201A8E3400B4F73A /* Products */;
+			mainGroup = E8A875B020212D350022BA20;
+			productRefGroup = E8A875BA20212D350022BA20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E8242BFD201A8E3400B4F73A /* AssetExample */,
+				E8A875B820212D350022BA20 /* AssetDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E8242BFC201A8E3400B4F73A /* Resources */ = {
+		E8A875B720212D350022BA20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8242C0C201A8E3400B4F73A /* LaunchScreen.storyboard in Resources */,
-				E8242C09201A8E3400B4F73A /* Assets.xcassets in Resources */,
-				E8242C07201A8E3400B4F73A /* Main.storyboard in Resources */,
+				E8A875C720212D350022BA20 /* LaunchScreen.storyboard in Resources */,
+				E8A875D520212E750022BA20 /* ModuleMaps in Resources */,
+				E8A875C420212D350022BA20 /* Assets.xcassets in Resources */,
+				E8A875C220212D350022BA20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E8242BFA201A8E3400B4F73A /* Sources */ = {
+		E8A875B520212D350022BA20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8242C1A201A8F4A00B4F73A /* LoginViewController.swift in Sources */,
-				E8242C02201A8E3400B4F73A /* AppDelegate.swift in Sources */,
-				E8242C1C201A902400B4F73A /* AssetViewController.swift in Sources */,
+				E8A875D920212EAB0022BA20 /* LoginViewController.swift in Sources */,
+				E8A875D720212E960022BA20 /* AssetViewController.swift in Sources */,
+				E8A875BD20212D350022BA20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E8242C05201A8E3400B4F73A /* Main.storyboard */ = {
+		E8A875C020212D350022BA20 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E8242C06201A8E3400B4F73A /* Base */,
+				E8A875C120212D350022BA20 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E8242C0A201A8E3400B4F73A /* LaunchScreen.storyboard */ = {
+		E8A875C520212D350022BA20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E8242C0B201A8E3400B4F73A /* Base */,
+				E8A875C620212D350022BA20 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -195,7 +199,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E8242C0E201A8E3400B4F73A /* Debug */ = {
+		E8A875C920212D360022BA20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		E8242C0F201A8E3400B4F73A /* Release */ = {
+		E8A875CA20212D360022BA20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,34 +306,36 @@
 			};
 			name = Release;
 		};
-		E8242C11201A8E3400B4F73A /* Debug */ = {
+		E8A875CC20212D360022BA20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AssetExample/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Frameworks";
+				INFOPLIST_FILE = AssetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ge.AssetExample;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.demo.AssetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
 				SWIFT_VERSION = 4.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E8242C12201A8E3400B4F73A /* Release */ = {
+		E8A875CD20212D360022BA20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AssetExample/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Frameworks";
+				INFOPLIST_FILE = AssetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ge.AssetExample;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.demo.AssetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
 				SWIFT_VERSION = 4.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -337,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E8242BF9201A8E3400B4F73A /* Build configuration list for PBXProject "AssetExample" */ = {
+		E8A875B420212D350022BA20 /* Build configuration list for PBXProject "AssetDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8242C0E201A8E3400B4F73A /* Debug */,
-				E8242C0F201A8E3400B4F73A /* Release */,
+				E8A875C920212D360022BA20 /* Debug */,
+				E8A875CA20212D360022BA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8242C10201A8E3400B4F73A /* Build configuration list for PBXNativeTarget "AssetExample" */ = {
+		E8A875CB20212D360022BA20 /* Build configuration list for PBXNativeTarget "AssetDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8242C11201A8E3400B4F73A /* Debug */,
-				E8242C12201A8E3400B4F73A /* Release */,
+				E8A875CC20212D360022BA20 /* Debug */,
+				E8A875CD20212D360022BA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E8242BF6201A8E3400B4F73A /* Project object */;
+	rootObject = E8A875B120212D350022BA20 /* Project object */;
 }
