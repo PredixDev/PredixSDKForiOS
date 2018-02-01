@@ -57,4 +57,32 @@
          </FileRef>
       </Group>
    </Group>
+   <Group
+      location = "group:DatabaseAPI"
+      name = "DatabaseAPI">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <Group
+         location = "group:DatabaseDemo"
+         name = "DatabaseDemo">
+         <FileRef
+            location = "group:DatabaseDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ReplicationDemo"
+         name = "ReplicationDemo">
+         <FileRef
+            location = "group:ReplicationDemo.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:IndexAndQueryDemo"
+         name = "IndexAndQueryDemo">
+         <FileRef
+            location = "group:IndexAndQueryDemo.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>

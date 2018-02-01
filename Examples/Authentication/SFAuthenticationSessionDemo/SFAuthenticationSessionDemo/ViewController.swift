@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         configuration.baseURL = URL(string: "https://predixsdkforiosexampleuaa.predix-uaa.run.aws-usw02-pr.ice.predix.io")
         configuration.clientId = "NativeClient"
         configuration.clientSecret = "test123"
-        configuration.useTouchID = true
+        configuration.useBiometricAuthentication = true
 
         // Create our AuthenticationManager with our configuration
         let manager = AuthenticationManager(configuration: configuration)

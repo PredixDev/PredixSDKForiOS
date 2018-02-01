@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F3A8C261FE88B2100A49F15 /* PredixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A8C241FE88B1800A49F15 /* PredixSDK.framework */; };
 		4F3A8C271FE88B2100A49F15 /* PredixSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A8C241FE88B1800A49F15 /* PredixSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FC612BB2017DFD400489F15 /* ModuleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 4FC612BA2017DFD300489F15 /* ModuleMaps */; };
 		E88199691FDF3EB100F51682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88199681FDF3EB100F51682 /* AppDelegate.swift */; };
 		E881996B1FDF3EB100F51682 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881996A1FDF3EB100F51682 /* LoginViewController.swift */; };
 		E881996E1FDF3EB100F51682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E881996C1FDF3EB100F51682 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		4F3A8C241FE88B1800A49F15 /* PredixSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PredixSDK.framework; sourceTree = "<group>"; };
+		4FC612BA2017DFD300489F15 /* ModuleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModuleMaps; sourceTree = "<group>"; };
 		E88199651FDF3EB100F51682 /* OnlineAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineAPIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88199681FDF3EB100F51682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E881996A1FDF3EB100F51682 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,6 @@
 		E881996F1FDF3EB100F51682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88199721FDF3EB100F51682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88199741FDF3EB100F51682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E88199821FDF488100F51682 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		E88199851FDF4C1F00F51682 /* OnlineAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineAPIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +86,7 @@
 		E88199671FDF3EB100F51682 /* OnlineAPIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E88199811FDF486800F51682 /* CouchbaseLite */,
+				4FC612BA2017DFD300489F15 /* ModuleMaps */,
 				E88199681FDF3EB100F51682 /* AppDelegate.swift */,
 				E881996A1FDF3EB100F51682 /* LoginViewController.swift */,
 				E88199851FDF4C1F00F51682 /* OnlineAPIViewController.swift */,
@@ -95,14 +96,6 @@
 				E88199741FDF3EB100F51682 /* Info.plist */,
 			);
 			path = OnlineAPIDemo;
-			sourceTree = "<group>";
-		};
-		E88199811FDF486800F51682 /* CouchbaseLite */ = {
-			isa = PBXGroup;
-			children = (
-				E88199821FDF488100F51682 /* module.modulemap */,
-			);
-			path = CouchbaseLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88199731FDF3EB100F51682 /* LaunchScreen.storyboard in Resources */,
+				4FC612BB2017DFD400489F15 /* ModuleMaps in Resources */,
 				E88199701FDF3EB100F51682 /* Assets.xcassets in Resources */,
 				E881996E1FDF3EB100F51682 /* Main.storyboard in Resources */,
 			);
