@@ -1,7 +1,7 @@
 import UIKit
 import PredixSDK
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController {
     
     private var timeSeriesManager: TimeSeriesManager?
     @IBOutlet weak var tagNamesTextView: UITextView!
