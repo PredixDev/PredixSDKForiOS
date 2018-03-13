@@ -28,3 +28,13 @@ For all of the features available in the SDK please visit the [Wiki](https://git
 
 - Create a [GitHub Issue](https://github.com/PredixDev/PredixSDKForiOS/issues) in this project
 - Ask a question on the [Predix Developer Forum](https://forum.predix.io/index.html)
+
+## Usage Analytics
+
+The SDK collects some basic usage analytics by default.  The analytics are collected anonymously and does not track user, device, application or any other type of identifiable information.  It simply lets us know what features are in use so that we can better focus our efforts on the areas that matter most.
+
+#### Opting Out
+
+To opt-out simply add `DisableAnonymousUsageAnalytics` to your `info.plist` with a `bool` of `true`.
+
+![Authentication UI Image](files/GuildImages/DisableAnonymousUsageAnalytics.png)
