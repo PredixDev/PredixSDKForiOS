@@ -37,4 +37,4 @@ The SDK collects some basic usage analytics by default.  The analytics are colle
 
 To opt-out simply add `DisableAnonymousUsageAnalytics` to your `info.plist` with a `bool` of `true`.
 
-![Authentication UI Image](wiki/files/GuildImages/DisableAnonymousUsageAnalytics.png)
+![Authentication UI Image](../wiki/files/GuildImages/DisableAnonymousUsageAnalytics.png)
