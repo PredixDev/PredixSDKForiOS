@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>InfoKeys Enumeration Reference</title>
+    <title>Asset Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Enum/InfoKeys" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Asset" class="dashAnchor"></a>
 
-    <a title="InfoKeys Enumeration Reference"></a>
+    <a title="Asset Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">PredixSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      InfoKeys Enumeration Reference
+      Asset Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -430,16 +430,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>InfoKeys</h1>
+            <h1>Asset</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">InfoKeys</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Asset</span></code></pre>
 
                 </div>
               </div>
-            <h2 id='info-keys' class='heading'>Info keys</h2>
-
-<p>The keys used in the <code><a href="../Enums/Utilities.html#/s:9PredixSDK9UtilitiesO11versionInfoSSvZ">Utilities.versionInfo</a></code> and <code><a href="../Enums/Utilities.html#/s:9PredixSDK9UtilitiesO10systemInfos10DictionaryVyS2SGvZ">Utilities.systemInfo</a></code> return dictionaries</p>
+            <p>Asset object holds the Predix-Assets objects returned from the backend service.</p>
 
           </div>
         </section>
@@ -451,9 +449,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8InfoKeysO10sdkVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/sdkVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO10sdkVersionSSvZ">sdkVersion</a>
+                    <a name="/s:9PredixSDK5AssetV7resultsSays10DictionaryVySSypGGv"></a>
+                    <a name="//apple_ref/swift/Property/results" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK5AssetV7resultsSays10DictionaryVySSypGGv">results</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -461,273 +459,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sdkVersion</span> <span class="o">=</span> <span class="s">"predix_sdk_version"</span></code></pre>
+                        <p>Asset model data, it holds the list of Assets as dictionaries returned by the service.</p>
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO15sdkBuildVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/sdkBuildVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO15sdkBuildVersionSSvZ">sdkBuildVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sdkBuildVersion</span> <span class="o">=</span> <span class="s">"predix_sdk_build_version"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO18applicationVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/applicationVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO18applicationVersionSSvZ">applicationVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">applicationVersion</span> <span class="o">=</span> <span class="s">"application_version"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO23applicationBuildVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/applicationBuildVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO23applicationBuildVersionSSvZ">applicationBuildVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">applicationBuildVersion</span> <span class="o">=</span> <span class="s">"application_build_version"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO19applicationBundleIdSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/applicationBundleId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO19applicationBundleIdSSvZ">applicationBundleId</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">applicationBundleId</span> <span class="o">=</span> <span class="s">"application_bundle_id"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO18predixSyncHostnameSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/predixSyncHostname" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO18predixSyncHostnameSSvZ">predixSyncHostname</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">predixSyncHostname</span> <span class="o">=</span> <span class="s">"predix_sync_hostname"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO11deviceModelSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/deviceModel" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO11deviceModelSSvZ">deviceModel</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deviceModel</span> <span class="o">=</span> <span class="s">"device_model"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO8deviceOSSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/deviceOS" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO8deviceOSSSvZ">deviceOS</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deviceOS</span> <span class="o">=</span> <span class="s">"device_OS"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO15deviceOSVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/deviceOSVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO15deviceOSVersionSSvZ">deviceOSVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deviceOSVersion</span> <span class="o">=</span> <span class="s">"device_OS_version"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO15databaseVersionSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/databaseVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO15databaseVersionSSvZ">databaseVersion</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">databaseVersion</span> <span class="o">=</span> <span class="s">"database_version"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9PredixSDK8InfoKeysO6localeSSvZ"></a>
-                    <a name="//apple_ref/swift/Variable/locale" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8InfoKeysO6localeSSvZ">locale</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">locale</span> <span class="o">=</span> <span class="s">"locale"</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">results</span><span class="p">:</span> <span class="p">[[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]]</span></code></pre>
 
                         </div>
                       </div>

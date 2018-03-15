@@ -331,7 +331,7 @@
                 <a class="nav-group-task-link" href="../Structs/AggregationSampling.html">AggregationSampling</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:9PredixSDK5AssetV">Asset</a>
+                <a class="nav-group-task-link" href="../Structs/Asset.html">Asset</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AssetManagerConfiguration.html">AssetManagerConfiguration</a>
@@ -449,9 +449,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK25AssetManagerConfigurationVACSSSg8tenantId_AD3urltcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(tenantId:url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationVACSSSg8tenantId_AD3urltcfc">init(tenantId:url:)</a>
+                    <a name="/s:9PredixSDK25AssetManagerConfigurationVACSS10instanceId_10Foundation3URLVSg012assetServiceI0tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(instanceId:assetServiceURL:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationVACSS10instanceId_10Foundation3URLVSg012assetServiceI0tcfc">init(instanceId:assetServiceURL:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -459,16 +459,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Constructs an instance of the configuration</p>
+                        <p>Constructs an instance of the configuration.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">tenantId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">assetServiceURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://predix-asset.run.aws-usw02-pr.ice.predix.io/"</span><span class="p">))</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instanceId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance id for the Asset Service you are targeting (<code>VCAP_SERVICES</code>/<code>predix-asset-dev</code> as <code><a href="../Structs/AssetManagerConfiguration.html#/s:9PredixSDK25AssetManagerConfigurationV10instanceIdSSv">instanceId</a></code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetServiceURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to your Asset Service instance.  <em>Default:</em> <a href="https://predix-asset.run.aws-usw02-pr.ice.predix.io/">https://predix-asset.run.aws-usw02-pr.ice.predix.io/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -476,9 +507,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK25AssetManagerConfigurationV8tenantIdSSSgv"></a>
-                    <a name="//apple_ref/swift/Property/tenantId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationV8tenantIdSSSgv">tenantId</a>
+                    <a name="/s:9PredixSDK25AssetManagerConfigurationV10instanceIdSSv"></a>
+                    <a name="//apple_ref/swift/Property/instanceId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationV10instanceIdSSv">instanceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -498,7 +529,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tenantId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -508,9 +539,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK25AssetManagerConfigurationV3URLSSSgv"></a>
-                    <a name="//apple_ref/swift/Property/URL" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationV3URLSSSgv">URL</a>
+                    <a name="/s:9PredixSDK25AssetManagerConfigurationV15assetServiceURL10Foundation0H0VSgv"></a>
+                    <a name="//apple_ref/swift/Property/assetServiceURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK25AssetManagerConfigurationV15assetServiceURL10Foundation0H0VSgv">assetServiceURL</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -518,7 +549,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Asset URI where all asset information is stored. It should be listed under the <code>VCAP_SERVICES</code>/<code>predix-asset-dev</code> as <code>uri</code>.</p>
+                        <p>Asset URL where all asset information is stored. It should be listed under the <code>VCAP_SERVICES</code>/<code>predix-asset-dev</code> as <code>uri</code>.</p>
 <div class="aside aside-see-also">
     <p class="aside-title">See also</p>
     <a href="https://docs.predix.io/en-US/content/service/data_management/asset/get-started-with-asset-service">https://docs.predix.io/en-US/content/service/data_management/asset/get-started-with-asset-service</a>
@@ -530,7 +561,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">URL</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">assetServiceURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -545,7 +576,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-16)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

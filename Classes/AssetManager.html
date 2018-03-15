@@ -331,7 +331,7 @@
                 <a class="nav-group-task-link" href="../Structs/AggregationSampling.html">AggregationSampling</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:9PredixSDK5AssetV">Asset</a>
+                <a class="nav-group-task-link" href="../Structs/Asset.html">Asset</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AssetManagerConfiguration.html">AssetManagerConfiguration</a>
@@ -439,12 +439,10 @@
               </div>
             <p>AssetManager manages the communication with backend Predix-Asset service.
 This class has the knowledge of how to create new Assets and fetch existing assets from the backend Predix-Asset service based on the given query parameters.
-<strong>Example:</strong></p>
-<pre class="highlight plaintext"><code>var config = AssetManagerConfiguration()
-config.baseURL = "https://predix-asset-service.com"
-config.tenantId = "&lt;asset-service-tenant-id&gt;"
-
-// Next, create an AssetManager object with the configuration
+<strong>Example:</strong>
+    // First, create an asset configuration with your Asset service instanceId
+    let config = AssetManagerConfiguration(instanceId: <q>my-asset-instanceId</q>)</p>
+<pre class="highlight plaintext"><code>// Next, create an AssetManager object with the configuration
 let manager = AssetManager(configuration: config)
 
 // now you can call:
@@ -587,7 +585,7 @@ let manager = AssetManager(configuration: config)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAssets</span><span class="p">(</span><span class="nv">jsonAssets</span><span class="p">:</span> <span class="p">[[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">asset</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:9PredixSDK5AssetV">Asset</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">assetStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/AssetStatus.html">AssetStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAssets</span><span class="p">(</span><span class="nv">jsonAssets</span><span class="p">:</span> <span class="p">[[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">asset</span><span class="p">:</span> <span class="kt"><a href="../Structs/Asset.html">Asset</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">assetStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/AssetStatus.html">AssetStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -672,7 +670,7 @@ See more: <a href="https://docs.predix.io/en-US/content/service/data_management/
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchAssets</span><span class="p">(</span><span class="nv">assetType</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt"><a href="../Structs/AssetQuery.html">AssetQuery</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">asset</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:9PredixSDK5AssetV">Asset</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">assetStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/AssetStatus.html">AssetStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchAssets</span><span class="p">(</span><span class="nv">assetType</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt"><a href="../Structs/AssetQuery.html">AssetQuery</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">asset</span><span class="p">:</span> <span class="kt"><a href="../Structs/Asset.html">Asset</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">assetStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/AssetStatus.html">AssetStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -754,7 +752,7 @@ See more: <a href="https://docs.predix.io/en-US/content/service/data_management/
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-01-16)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
