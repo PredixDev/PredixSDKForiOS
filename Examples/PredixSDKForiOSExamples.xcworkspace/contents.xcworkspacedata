@@ -85,4 +85,15 @@
          </FileRef>
       </Group>
    </Group>
+   <Group
+      location = "container:"
+      name = "TimeSeriesAPI">
+      <Group
+         location = "container:"
+         name = "TimeSeriesDemo">
+         <FileRef
+            location = "group:TimeSeriesAPI/TimeSeriesAPIDemo/TimeSeriesAPIDemo.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>

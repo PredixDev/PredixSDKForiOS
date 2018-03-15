@@ -66,7 +66,7 @@
                         <outlet property="signInButton" destination="DKQ-oA-Vor" id="GM0-8u-ceu"/>
                         <outlet property="statusLabel" destination="e3S-Ml-oKP" id="4AY-NI-0OV"/>
                         <outlet property="usernameTextField" destination="WK3-oL-AwK" id="N6x-up-NdU"/>
-                        <segue destination="yjf-LG-95d" kind="presentation" identifier="onlineAPI" modalTransitionStyle="coverVertical" id="IcZ-8M-YRw"/>
+                        <segue destination="eVN-BT-ISI" kind="presentation" identifier="onlineAPI" id="w5A-bd-i2Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,6 +76,7 @@
         <!--Online API Demo-->
         <scene sceneID="S9u-Yn-hyV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLQ-fa-AMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="eVN-BT-ISI" customClass="OnlineAPIViewController" customModule="OnlineAPIDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HFY-Vj-MVG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -117,27 +118,8 @@
                         <outlet property="statusLabel" destination="glb-0o-laX" id="Y4w-Uy-oMZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tLQ-fa-AMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="31.934032983508249"/>
-        </scene>
-        <!--Online API Demo-->
-        <scene sceneID="MgI-hj-lvC">
-            <objects>
-                <navigationController title="Online API Demo" automaticallyAdjustsScrollViewInsets="NO" id="yjf-LG-95d" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1K0-Gr-ce8">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eVN-BT-ISI" kind="relationship" relationship="rootViewController" id="3uL-po-NDv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SqY-zH-bwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="977" y="32"/>
+            <point key="canvasLocation" x="804" y="32"/>
         </scene>
     </scenes>
 </document>
