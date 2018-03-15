@@ -33,6 +33,4 @@ For all of the features available in the SDK please visit the [Wiki](https://git
 
 The SDK collects some basic usage analytics by default.  The analytics are collected anonymously and does not track user, device, application or any other type of identifiable information.  It simply lets us know what features are in use so that we can better focus our efforts on the areas that matter most.
 
-#### Opting Out
-
-[Learn how to opt of out usage analytics](https://github.com/PredixDev/PredixSDKForiOS/wiki/Disable-Usage-Analytic-Tracking/)
+Usage analytics can be disabled, [Learn how to opt of out usage analytics](https://github.com/PredixDev/PredixSDKForiOS/wiki/Disable-Usage-Analytic-Tracking/).
