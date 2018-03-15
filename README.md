@@ -35,6 +35,6 @@ The SDK collects some basic usage analytics by default.  The analytics are colle
 
 #### Opting Out
 
-To opt-out simply add `DisableAnonymousUsageAnalytics` to your `info.plist` with a `bool` of `true`.
+To opt-out simply add `DisableAnonymousUsageAnalytics` to your `info.plist`, `NSUserDefaults`, or settings bundle with a `bool` of `true`.
 
 ![Authentication UI Image](../../wiki/files/GuildImages/DisableAnonymousUsageAnalytics.png)
