@@ -185,13 +185,13 @@
             <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
@@ -433,7 +433,7 @@
             <h1>Indexer</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Indexer</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Indexer</span></code></pre>
 
                 </div>
               </div>
@@ -468,7 +468,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">AddIndexRow</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">AddIndexRow</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -521,14 +521,14 @@
                       <div class="abstract">
                         <p>Defines the function that will be called when the database documents are indexed.</p>
 
-<p>See also the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">Indexer.map</a></code> property.</p>
+<p>See also the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcvp">Indexer.map</a></code> property.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Map</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html">Document</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">addIndexRow</span><span class="p">:</span> <span class="kd">@escaping</span>  <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP11AddIndexRowa">AddIndexRow</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Map</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html">Document</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">addIndexRow</span><span class="p">:</span> <span class="kd">@escaping</span>  <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP11AddIndexRowa">AddIndexRow</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
                       </div>
@@ -590,7 +590,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Reduce</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">rereduce</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Any</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Reduce</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">rereduce</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Any</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -647,9 +647,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK7IndexerP4nameSSv"></a>
+                    <a name="/s:9PredixSDK7IndexerP4nameSSvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK7IndexerP4nameSSv">name</a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP4nameSSvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,7 +664,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -674,9 +674,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK7IndexerP7versionSSv"></a>
+                    <a name="/s:9PredixSDK7IndexerP7versionSSvp"></a>
                     <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK7IndexerP7versionSSv">version</a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP7versionSSvp">version</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -693,7 +693,7 @@
 
 <p>Once created, a database index is stored as part of the data in database, for this reason, changes to an index require special handling.</p>
 
-<p>If any part of the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">map</a></code> function or <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv">reduce</a></code> function change, the <code>version</code> string should be changed to ensure the index is properly updated.
+<p>If any part of the <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcvp">map</a></code> function or <code><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgvp">reduce</a></code> function change, the <code>version</code> string should be changed to ensure the index is properly updated.
 Failure to change this value when updating the code will lead to unpredicable results.</p>
 
                       </div>
@@ -701,7 +701,7 @@ Failure to change this value when updating the code will lead to unpredicable re
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -711,9 +711,9 @@ Failure to change this value when updating the code will lead to unpredicable re
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv"></a>
+                    <a name="/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcvp"></a>
                     <a name="//apple_ref/swift/Property/map" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcv">map</a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP3mapyAA8DocumentC_yyp_ypSgtctcvp">map</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -763,17 +763,17 @@ Failure to change this value when updating the code will lead to unpredicable re
 <p>Details:</p>
 
 <p><em>Arrays</em> are particularly useful to achieve multiple layers of sorting, since elements are compared in order of their array index. So, all the first array elements are compaired, then all the second elements, etc. The net effect of this type of index can be a sorted structure like:</p>
-<pre class="highlight plaintext"><code>| Ingredient | Type            |
-|------------|-----------------|
-| Olive      | Black           |
-| Olive      | Green           |
-| Olive      | Pimento stuffed |
-| Vermouth   | Dry             |
-| Vermouth   | Extra Dry       |
-| Vermouth   | French          |
-| Vodka      | Grey Goose      |
-| Vodka      | Stoli           |
-| Vodka      | Tito's          |
+<pre class="highlight swift"><code><span class="o">|</span> <span class="kt">Ingredient</span> <span class="o">|</span> <span class="k">Type</span>            <span class="o">|</span>
+<span class="o">|------------|-----------------|</span>
+<span class="o">|</span> <span class="kt">Olive</span>      <span class="o">|</span> <span class="kt">Black</span>           <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Olive</span>      <span class="o">|</span> <span class="kt">Green</span>           <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Olive</span>      <span class="o">|</span> <span class="kt">Pimento</span> <span class="n">stuffed</span> <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vermouth</span>   <span class="o">|</span> <span class="kt">Dry</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vermouth</span>   <span class="o">|</span> <span class="kt">Extra</span> <span class="kt">Dry</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vermouth</span>   <span class="o">|</span> <span class="kt">French</span>          <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vodka</span>      <span class="o">|</span> <span class="kt">Grey</span> <span class="kt">Goose</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vodka</span>      <span class="o">|</span> <span class="kt">Stoli</span>           <span class="o">|</span>
+<span class="o">|</span> <span class="kt">Vodka</span>      <span class="o">|</span> <span class="kt">Tito</span><span class="err">'</span><span class="n">s</span>          <span class="o">|</span>
 </code></pre>
 
 <p><em>Dictionaries/maps</em> are a particularly poor type to use for sorting since JSON doesn&rsquo;t specify any ordering of keys, so the order of items is ambiguous. So while using dictionaries as key is technically possible, it is not recommended.</p>
@@ -787,22 +787,22 @@ Failure to change this value when updating the code will lead to unpredicable re
 <p>There can be instances when it is useful for the query&rsquo;s document id to be the id of a different docuement than that which emitted the index row. This can be acheived by emiting a dictionary value where the dictionary contains a key/value pair where the key is <q>_id</q>, and the value is the document id of the document you want to associate with the index row, rather than the source document id.</p>
 
 <p><em>For example:</em></p>
-<pre class="highlight plaintext"><code>let myMap: Indexer.Map = { (document, addIndexRow) in
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">myMap</span><span class="p">:</span> <span class="kt">Indexer</span><span class="o">.</span><span class="kt">Map</span> <span class="o">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">document</span><span class="p">,</span> <span class="n">addIndexRow</span><span class="p">)</span> <span class="k">in</span>
 
-    // if the source document contains a "related_documents" property
-    if let relatedDocuments = document["related_documents"] as? [String] {
-        // for each value in "related_documents" (which are related document ids)
-        for relatedDocument in relatedDocuments {
-            // add an index row with a key of type and id, and a value that changes the query results document id
-            // to the related document.
-            let key = [type, document.id]
-            let value = ["_id": relatedDocument]
-            addIndexRow(key, value)
-        }
-    }
-}
+    <span class="c1">// if the source document contains a "related_documents" property</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">relatedDocuments</span> <span class="o">=</span> <span class="n">document</span><span class="p">[</span><span class="s">"related_documents"</span><span class="p">]</span> <span class="k">as?</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+        <span class="c1">// for each value in "related_documents" (which are related document ids)</span>
+        <span class="k">for</span> <span class="n">relatedDocument</span> <span class="k">in</span> <span class="n">relatedDocuments</span> <span class="p">{</span>
+            <span class="c1">// add an index row with a key of type and id, and a value that changes the query results document id</span>
+            <span class="c1">// to the related document.</span>
+            <span class="k">let</span> <span class="nv">key</span> <span class="o">=</span> <span class="p">[</span><span class="n">type</span><span class="p">,</span> <span class="n">document</span><span class="o">.</span><span class="n">id</span><span class="p">]</span>
+            <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="p">[</span><span class="s">"_id"</span><span class="p">:</span> <span class="n">relatedDocument</span><span class="p">]</span>
+            <span class="nf">addIndexRow</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-let myIndex = Index(name: "myIndex", version: "1", map: myMap)
+<span class="k">let</span> <span class="nv">myIndex</span> <span class="o">=</span> <span class="kt">Index</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"myIndex"</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="s">"1"</span><span class="p">,</span> <span class="nv">map</span><span class="p">:</span> <span class="n">myMap</span><span class="p">)</span>
 
 </code></pre>
 
@@ -813,7 +813,7 @@ let myIndex = Index(name: "myIndex", version: "1", map: myMap)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">map</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3Mapa">Map</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">map</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP3Mapa">Map</a></span></code></pre>
 
                         </div>
                       </div>
@@ -823,9 +823,9 @@ let myIndex = Index(name: "myIndex", version: "1", map: myMap)
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv"></a>
+                    <a name="/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgvp"></a>
                     <a name="//apple_ref/swift/Property/reduce" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgv">reduce</a>
+                    <a class="token" href="#/s:9PredixSDK7IndexerP6reduceypSayypG_AESbtcSgvp">reduce</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -846,53 +846,53 @@ let myIndex = Index(name: "myIndex", version: "1", map: myMap)
 <p>The rereduce flag is used when querying large data sets. When the data set is large the underlying system will break the map/reduce into smaller chucks, run the reduce on each chunk, then run reduce again on the reduced chunks. When this happens, the rereduce flag will true, the key array will be empty, and the value array will contain the partial reduced values.</p>
 
 <p><strong>Example</strong></p>
-<pre class="highlight plaintext"><code>// Given a map function that emits the "type" of each document...
-let myMap: Indexer.Map = { (document, addIndexRow) in
+<pre class="highlight swift"><code><span class="c1">// Given a map function that emits the "type" of each document...</span>
+<span class="k">let</span> <span class="nv">myMap</span><span class="p">:</span> <span class="kt">Indexer</span><span class="o">.</span><span class="kt">Map</span> <span class="o">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">document</span><span class="p">,</span> <span class="n">addIndexRow</span><span class="p">)</span> <span class="k">in</span>
 
-    if let type = document["type"] as? String {
-        addIndexRow(type, nil)
-        }
-    }
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">type</span> <span class="o">=</span> <span class="n">document</span><span class="p">[</span><span class="s">"type"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">String</span> <span class="p">{</span>
+        <span class="nf">addIndexRow</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-    // This reduce function will summarize those types, and output a dictionary
-    // which contains each unique type and the total number of documents of that type.
-    let myReduce: Indexer.Reduce = =  { ( keys, values, rereduce) in
+    <span class="c1">// This reduce function will summarize those types, and output a dictionary</span>
+    <span class="c1">// which contains each unique type and the total number of documents of that type.</span>
+    <span class="k">let</span> <span class="nv">myReduce</span><span class="p">:</span> <span class="kt">Indexer</span><span class="o">.</span><span class="kt">Reduce</span> <span class="o">=</span> <span class="o">=</span>  <span class="p">{</span> <span class="p">(</span> <span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">rereduce</span><span class="p">)</span> <span class="k">in</span>
 
-    var result: [String: Int] = [:]
+    <span class="k">var</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span>
 
-    // if this is not a rereduce
-    if !rereduce {
-        // count each unique key value
-        if let sKeys = keys as? [String] {
-            for key in sKeys {
-                var count = result[key] ?? 0
-                count += 1
-                result[key] = count
-            }
-        }
-    } else {
-        // This is a rereduce, then our value array will be an array of
-        // dictionaries of unique key values and their counts from above.
-        if let counts = values as? [[String: Int]] {
-            // for each result array
-            for count in counts {
-                // for each key in the result
-                for key in count.keys {
-                    // count and compile a final result dictionary
-                    var count = result[key] ?? 0
-                    count += 1
-                    result[key] = count
-                }
-            }
-        }
-    }
+    <span class="c1">// if this is not a rereduce</span>
+    <span class="k">if</span> <span class="o">!</span><span class="n">rereduce</span> <span class="p">{</span>
+        <span class="c1">// count each unique key value</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">sKeys</span> <span class="o">=</span> <span class="n">keys</span> <span class="k">as?</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="k">in</span> <span class="n">sKeys</span> <span class="p">{</span>
+                <span class="k">var</span> <span class="nv">count</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="p">??</span> <span class="mi">0</span>
+                <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// This is a rereduce, then our value array will be an array of</span>
+        <span class="c1">// dictionaries of unique key values and their counts from above.</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">counts</span> <span class="o">=</span> <span class="n">values</span> <span class="k">as?</span> <span class="p">[[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Int</span><span class="p">]]</span> <span class="p">{</span>
+            <span class="c1">// for each result array</span>
+            <span class="k">for</span> <span class="n">count</span> <span class="k">in</span> <span class="n">counts</span> <span class="p">{</span>
+                <span class="c1">// for each key in the result</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="k">in</span> <span class="n">count</span><span class="o">.</span><span class="n">keys</span> <span class="p">{</span>
+                    <span class="c1">// count and compile a final result dictionary</span>
+                    <span class="k">var</span> <span class="nv">count</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="p">??</span> <span class="mi">0</span>
+                    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-    // return the unique key values
-    // Note that regardless of the rereduce flag the result is the same data type. This must always be the case.
-    return result
-}
+    <span class="c1">// return the unique key values</span>
+    <span class="c1">// Note that regardless of the rereduce flag the result is the same data type. This must always be the case.</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
 
-let myIndex = Index(name: "myIndex", version: "1", map: myMap, reduce: myReduce)
+<span class="k">let</span> <span class="nv">myIndex</span> <span class="o">=</span> <span class="kt">Index</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"myIndex"</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="s">"1"</span><span class="p">,</span> <span class="nv">map</span><span class="p">:</span> <span class="n">myMap</span><span class="p">,</span> <span class="nv">reduce</span><span class="p">:</span> <span class="n">myReduce</span><span class="p">)</span>
 
 </code></pre>
 
@@ -901,7 +901,7 @@ let myIndex = Index(name: "myIndex", version: "1", map: myMap, reduce: myReduce)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">reduce</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6Reducea">Reduce</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">reduce</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Indexer.html#/s:9PredixSDK7IndexerP6Reducea">Reduce</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -916,8 +916,8 @@ let myIndex = Index(name: "myIndex", version: "1", map: myMap, reduce: myReduce)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

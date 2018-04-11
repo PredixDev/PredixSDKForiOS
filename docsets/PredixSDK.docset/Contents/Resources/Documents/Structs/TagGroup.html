@@ -185,13 +185,13 @@
             <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
@@ -433,7 +433,7 @@
             <h1>TagGroup</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagGroup</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagGroup</span></code></pre>
 
                 </div>
               </div>
@@ -448,11 +448,11 @@
 <p><strong>groupCount:</strong> Defines the maximum number of groups to return.  For example if you set the rangeSize to 1 hour and you set the groupCount to 24 than you would get 24 groups each with an hours worth of data points</p>
 
 <p>Example of grouping by quality:</p>
-<pre class="highlight plaintext"><code>   let group = TagGroup
-   group.name = "quality"
-   group.rangeSize = 4
-   group.groupCount = 4
-   ...
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">TagGroup</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"quality"</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">rangeSize</span> <span class="o">=</span> <span class="mi">4</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">groupCount</span> <span class="o">=</span> <span class="mi">4</span>
+   <span class="o">...</span>
 </code></pre>
 
 <p>The above example would give you 4 groups of quality (Bad, Uncertain, Not Acceptable and Good).  The first group would contain all quality values for bad data points, the second group would contain all the data points for uncertain data points and so on.</p>
@@ -467,9 +467,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8TagGroupV4nameSSSgv"></a>
+                    <a name="/s:9PredixSDK8TagGroupV4nameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8TagGroupV4nameSSSgv">name</a>
+                    <a class="token" href="#/s:9PredixSDK8TagGroupV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -484,7 +484,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -494,9 +494,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8TagGroupV9rangeSizeSSSgv"></a>
+                    <a name="/s:9PredixSDK8TagGroupV9rangeSizeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/rangeSize" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8TagGroupV9rangeSizeSSSgv">rangeSize</a>
+                    <a class="token" href="#/s:9PredixSDK8TagGroupV9rangeSizeSSSgvp">rangeSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -511,7 +511,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rangeSize</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rangeSize</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -521,9 +521,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8TagGroupV10groupCountSiSgv"></a>
+                    <a name="/s:9PredixSDK8TagGroupV10groupCountSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/groupCount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8TagGroupV10groupCountSiSgv">groupCount</a>
+                    <a class="token" href="#/s:9PredixSDK8TagGroupV10groupCountSiSgvp">groupCount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -538,7 +538,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">groupCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">groupCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -565,7 +565,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rangeSize</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">groupCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rangeSize</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">groupCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -580,8 +580,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -184,13 +184,13 @@
             <a class="nav-group-name-link" href="Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
@@ -462,7 +462,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">PredixSyncAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PredixSyncAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -502,7 +502,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">Logger</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/LogWriter.html">LogWriter</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">Logger</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/LogWriter.html">LogWriter</a></span></code></pre>
 
                         </div>
                       </div>
@@ -534,7 +534,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -565,39 +565,39 @@
 <p>In this way, based on configuration, AuthenticationManager will automatically handle online and offline authentication and if so configured will utilize biometric authentication (Touch ID or Face ID) for subsequent authentications after an initial online login was performed successfully.</p>
 
 <p><em>Example:</em>*</p>
-<pre class="highlight plaintext"><code>// First, create and populate our configuration
-var config = AuthenticationManagerConfiguration()
-let url = URL(string: "https://auth.myserver.com")
-config.baseURL = url
-config.clientId = "my_oauth_client_id"
-config.clientSecret = "my_oauth_client_secret"
-config.useBiometricAuthentication = true // BiometricAuthentication for refresh and offline authentication is disabled by default.
+<pre class="highlight swift"><code><span class="c1">// First, create and populate our configuration</span>
+<span class="k">var</span> <span class="nv">config</span> <span class="o">=</span> <span class="kt">AuthenticationManagerConfiguration</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://auth.myserver.com"</span><span class="p">)</span>
+<span class="n">config</span><span class="o">.</span><span class="n">baseURL</span> <span class="o">=</span> <span class="n">url</span>
+<span class="n">config</span><span class="o">.</span><span class="n">clientId</span> <span class="o">=</span> <span class="s">"my_oauth_client_id"</span>
+<span class="n">config</span><span class="o">.</span><span class="n">clientSecret</span> <span class="o">=</span> <span class="s">"my_oauth_client_secret"</span>
+<span class="n">config</span><span class="o">.</span><span class="n">useBiometricAuthentication</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// BiometricAuthentication for refresh and offline authentication is disabled by default.</span>
 
-// Next, create an AuthenticationManager object with the configuration
-let manager = AuthenticationManager(configuration: config)
+<span class="c1">// Next, create an AuthenticationManager object with the configuration</span>
+<span class="k">let</span> <span class="nv">manager</span> <span class="o">=</span> <span class="kt">AuthenticationManager</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="n">config</span><span class="p">)</span>
 
-// Assign an OnlineAuthenticationHandler or subclass. In this case, UAABrowserAuthenticationHandler provides support for browser-based UAA login
-let onlineHandler = UAABrowserAuthenticationHandler(redirectURI: "predixmobile://foobar")
+<span class="c1">// Assign an OnlineAuthenticationHandler or subclass. In this case, UAABrowserAuthenticationHandler provides support for browser-based UAA login</span>
+<span class="k">let</span> <span class="nv">onlineHandler</span> <span class="o">=</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">(</span><span class="nv">redirectURI</span><span class="p">:</span> <span class="s">"predixmobile://foobar"</span><span class="p">)</span>
 
-// Assign a refresh handler to allow for refreshing a token without having to do a full login again
-onlineHandler.refreshAuthenticationHandler = UAARefreshAuthenticationHandler()
+<span class="c1">// Assign a refresh handler to allow for refreshing a token without having to do a full login again</span>
+<span class="n">onlineHandler</span><span class="o">.</span><span class="n">refreshAuthenticationHandler</span> <span class="o">=</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">()</span>
 
-// Set delegates as needed
-onlineHandler.authenticationBrowserDelegate = self
+<span class="c1">// Set delegates as needed</span>
+<span class="n">onlineHandler</span><span class="o">.</span><span class="n">authenticationBrowserDelegate</span> <span class="o">=</span> <span class="k">self</span>
 
-// Assign the OnlineAuthenticationHandler to the manager
-manager.onlineAuthenticationHandler = onlineHandler
+<span class="c1">// Assign the OnlineAuthenticationHandler to the manager</span>
+<span class="n">manager</span><span class="o">.</span><span class="n">onlineAuthenticationHandler</span> <span class="o">=</span> <span class="n">onlineHandler</span>
 
-// Similarly, assign an OfflineAuthenticationHandler for offline authentication support
-manager.offlineAuthenticationHandler = OfflineAuthenticationHandler()
+<span class="c1">// Similarly, assign an OfflineAuthenticationHandler for offline authentication support</span>
+<span class="n">manager</span><span class="o">.</span><span class="n">offlineAuthenticationHandler</span> <span class="o">=</span> <span class="kt">OfflineAuthenticationHandler</span><span class="p">()</span>
 
-// And assign an AuthorizationHandler class for calling the authorization service after authenticating.
-manager.authorizationHandler = PredixSyncAuthorizationHandler()
+<span class="c1">// And assign an AuthorizationHandler class for calling the authorization service after authenticating.</span>
+<span class="n">manager</span><span class="o">.</span><span class="n">authorizationHandler</span> <span class="o">=</span> <span class="kt">PredixSyncAuthorizationHandler</span><span class="p">()</span>
 
-// Then call authenticate. The completionHandler will be called when the authentication process finishes.
-manager.authenticate { (status) in
-    print("Authentication Status: \(status)")
-}
+<span class="c1">// Then call authenticate. The completionHandler will be called when the authentication process finishes.</span>
+<span class="n">manager</span><span class="o">.</span><span class="n">authenticate</span> <span class="p">{</span> <span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Authentication Status: </span><span class="se">\(</span><span class="n">status</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                         <a href="Classes/AuthenticationManager.html" class="slightly-smaller">See more</a>
@@ -606,7 +606,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AuthenticationManager</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AuthenticationManager</span></code></pre>
 
                         </div>
                       </div>
@@ -640,7 +640,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ServiceBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ServiceBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -672,7 +672,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Database</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Database</span></code></pre>
 
                         </div>
                       </div>
@@ -704,7 +704,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">QueryResultRow</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">QueryResultRow</span></code></pre>
 
                         </div>
                       </div>
@@ -732,7 +732,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">QueryResultEnumerator</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">IteratorProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">QueryResultEnumerator</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">IteratorProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -764,7 +764,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Document</span><span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">ExpressibleByDictionaryLiteral</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Document</span><span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">ExpressibleByDictionaryLiteral</span></code></pre>
 
                         </div>
                       </div>
@@ -796,7 +796,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAACodeExchangeAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAACodeExchangeAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -833,7 +833,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
 
                         </div>
                       </div>
@@ -866,7 +866,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WriteKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WriteKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
 
                         </div>
                       </div>
@@ -894,7 +894,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommand</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommand</span></code></pre>
 
                         </div>
                       </div>
@@ -926,7 +926,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFAuthenticationSessionHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFAuthenticationSessionHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -960,7 +960,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">AuthenticationHandler</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AuthenticationHandler</span></code></pre>
 
                         </div>
                       </div>
@@ -998,7 +998,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1030,7 +1030,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserManager</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserManager</span></code></pre>
 
                         </div>
                       </div>
@@ -1139,7 +1139,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">MockNetworkDataManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MockNetworkDataManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1171,7 +1171,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Reachability</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryConnectivity.html">QueryConnectivity</a></span><span class="p">,</span> <span class="kt">TrackerHost</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Reachability</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryConnectivity.html">QueryConnectivity</a></span><span class="p">,</span> <span class="kt">TrackerHost</span></code></pre>
 
                         </div>
                       </div>
@@ -1205,7 +1205,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1237,7 +1237,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixSyncServerInformationFetcher</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixSyncServerInformationFetcher</span></code></pre>
 
                         </div>
                       </div>
@@ -1271,7 +1271,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">OfflineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfflineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1303,7 +1303,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAAAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1337,7 +1337,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1366,16 +1366,16 @@ file types (JSON, text, images, video, etc.)</p>
 <p>The TimeSeriesManager is intended to work with the Predix Cloud Time Series service, for more information please see the <a href="https://docs.predix.io/en-US/content/service/data_management/time_series/">Time Series service documentation</a>.</p>
 
 <p><strong>Example usage:</strong></p>
-<pre class="highlight plaintext"><code>   // First, create a TimeSeriesManagerConfiguration and populate the configuration with your Time Series service information.
-   let config = TimeSeriesManagerConfiguration(predixZoneId: "&lt;your ZoneID used for the Time Series Service&gt;")
+<pre class="highlight swift"><code>   <span class="c1">// First, create a TimeSeriesManagerConfiguration and populate the configuration with your Time Series service information.</span>
+   <span class="k">let</span> <span class="nv">config</span> <span class="o">=</span> <span class="kt">TimeSeriesManagerConfiguration</span><span class="p">(</span><span class="nv">predixZoneId</span><span class="p">:</span> <span class="s">"&lt;your ZoneID used for the Time Series Service&gt;"</span><span class="p">)</span>
 
-   // Next, create a TimeSeriesManager with the TimeSeriesManagerConfiguration
-   let manager = TimeSeriesManager(configuration: config)
+   <span class="c1">// Next, create a TimeSeriesManager with the TimeSeriesManagerConfiguration</span>
+   <span class="k">let</span> <span class="nv">manager</span> <span class="o">=</span> <span class="kt">TimeSeriesManager</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="n">config</span><span class="p">)</span>
 
-   // Then call the API. The completionHandler will be called when the process finishes.
-   self.getManager().getTags(completionHandler:{(tags,  error) in
-   ...
-}
+   <span class="c1">// Then call the API. The completionHandler will be called when the process finishes.</span>
+   <span class="k">self</span><span class="o">.</span><span class="nf">getManager</span><span class="p">()</span><span class="o">.</span><span class="nf">getTags</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:{(</span><span class="n">tags</span><span class="p">,</span>  <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+   <span class="o">...</span>
+<span class="p">}</span>
 </code></pre>
 
                         <a href="Classes/TimeSeriesManager.html" class="slightly-smaller">See more</a>
@@ -1384,7 +1384,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TimeSeriesManager</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TimeSeriesManager</span></code></pre>
 
                         </div>
                       </div>
@@ -1418,7 +1418,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BrowserBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BrowserBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1450,7 +1450,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1482,7 +1482,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">DocumentAttachment</span><span class="p">:</span> <span class="kt"><a href="Protocols/Attachment.html">Attachment</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DocumentAttachment</span><span class="p">:</span> <span class="kt"><a href="Protocols/Attachment.html">Attachment</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1514,7 +1514,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommandResult</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommandResult</span></code></pre>
 
                         </div>
                       </div>
@@ -1547,7 +1547,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommandResult</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommandResult</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1575,7 +1575,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Keychain</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Keychain</span></code></pre>
 
                         </div>
                       </div>
@@ -1611,12 +1611,12 @@ This class has the knowledge of how to create new Assets and fetch existing asse
 <strong>Example:</strong>
     // First, create an asset configuration with your Asset service instanceId
     let config = AssetManagerConfiguration(instanceId: <q>my-asset-instanceId</q>)</p>
-<pre class="highlight plaintext"><code>// Next, create an AssetManager object with the configuration
-let manager = AssetManager(configuration: config)
+<pre class="highlight swift"><code><span class="c1">// Next, create an AssetManager object with the configuration</span>
+<span class="k">let</span> <span class="nv">manager</span> <span class="o">=</span> <span class="kt">AssetManager</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="n">config</span><span class="p">)</span>
 
-// now you can call:
-// `createAssets(jsonAssets: [[String:Any]], completionHandler: @escaping (Asset?, AssetStatus)-&gt;Void)`
-// `fetchAssets(assetType: String, query: AssetQuery, completionHandler: @escaping (Asset?, AssetStatus)-&gt;Void)`
+<span class="c1">// now you can call:</span>
+<span class="c1">// `createAssets(jsonAssets: [[String:Any]], completionHandler: @escaping (Asset?, AssetStatus)-&gt;Void)`</span>
+<span class="c1">// `fetchAssets(assetType: String, query: AssetQuery, completionHandler: @escaping (Asset?, AssetStatus)-&gt;Void)`</span>
 </code></pre>
 
                         <a href="Classes/AssetManager.html" class="slightly-smaller">See more</a>
@@ -1625,7 +1625,7 @@ let manager = AssetManager(configuration: config)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AssetManager</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AssetManager</span></code></pre>
 
                         </div>
                       </div>
@@ -1640,8 +1640,8 @@ let manager = AssetManager(configuration: config)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

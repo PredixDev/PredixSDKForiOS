@@ -185,13 +185,13 @@
             <a class="nav-group-name-link" href="../../Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="../../Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
@@ -433,7 +433,7 @@
             <h1>StatusCode</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StatusCode</span><span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StatusCode</span><span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -454,9 +454,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s16RawRepresentableP8rawValue0aD0Qzv"></a>
+                    <a name="/s:s16RawRepresentableP8rawValue0aD0Qzvp"></a>
                     <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s16RawRepresentableP8rawValue0aD0Qzv">rawValue</a>
+                    <a class="token" href="#/s:s16RawRepresentableP8rawValue0aD0Qzvp">rawValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -470,7 +470,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -480,9 +480,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="/s:s8HashableP9hashValueSivp"></a>
                     <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSivp">hashValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -496,7 +496,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -522,7 +522,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -546,15 +546,15 @@
 
 <p>If there is no value of the type that corresponds with the specified raw
 value, this initializer returns <code>nil</code>. For example:</p>
-<pre class="highlight plaintext"><code>enum PaperSize: String {
-    case A4, A5, Letter, Legal
-}
+<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">PaperSize</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="kt">A4</span><span class="p">,</span> <span class="kt">A5</span><span class="p">,</span> <span class="kt">Letter</span><span class="p">,</span> <span class="kt">Legal</span>
+<span class="p">}</span>
 
-print(PaperSize(rawValue: "Legal"))
-// Prints "Optional("PaperSize.Legal")"
+<span class="nf">print</span><span class="p">(</span><span class="kt">PaperSize</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="s">"Legal"</span><span class="p">))</span>
+<span class="c1">// Prints "Optional("PaperSize.Legal")"</span>
 
-print(PaperSize(rawValue: "Tabloid"))
-// Prints "nil"
+<span class="nf">print</span><span class="p">(</span><span class="kt">PaperSize</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="s">"Tabloid"</span><span class="p">))</span>
+<span class="c1">// Prints "nil"</span>
 </code></pre>
 
                       </div>
@@ -562,7 +562,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -595,9 +595,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV2okAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV2okAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/ok" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV2okAEvZ">ok</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV2okAEvpZ">ok</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -612,7 +612,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -622,9 +622,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV7createdAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV7createdAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/created" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV7createdAEvZ">created</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV7createdAEvpZ">created</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -639,7 +639,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">created</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">201</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">created</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">201</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -649,9 +649,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV5foundAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV5foundAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/found" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV5foundAEvZ">found</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV5foundAEvpZ">found</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -666,7 +666,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">found</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">302</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">found</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">302</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -676,9 +676,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV17temporaryRedirectAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV17temporaryRedirectAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/temporaryRedirect" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV17temporaryRedirectAEvZ">temporaryRedirect</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV17temporaryRedirectAEvpZ">temporaryRedirect</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -693,7 +693,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">temporaryRedirect</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">307</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">temporaryRedirect</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">307</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -703,9 +703,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV10badRequestAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV10badRequestAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/badRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV10badRequestAEvZ">badRequest</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV10badRequestAEvpZ">badRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -720,7 +720,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">badRequest</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">badRequest</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -730,9 +730,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV12unauthorizedAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV12unauthorizedAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/unauthorized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV12unauthorizedAEvZ">unauthorized</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV12unauthorizedAEvpZ">unauthorized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -747,7 +747,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">unauthorized</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">401</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">unauthorized</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">401</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -757,9 +757,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV9forbiddenAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV9forbiddenAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/forbidden" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV9forbiddenAEvZ">forbidden</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV9forbiddenAEvpZ">forbidden</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -774,7 +774,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">forbidden</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">403</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">forbidden</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">403</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -784,9 +784,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV8notFoundAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV8notFoundAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/notFound" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV8notFoundAEvZ">notFound</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV8notFoundAEvpZ">notFound</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -801,7 +801,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notFound</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notFound</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -811,9 +811,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV16methodNotAllowedAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV16methodNotAllowedAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/methodNotAllowed" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV16methodNotAllowedAEvZ">methodNotAllowed</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV16methodNotAllowedAEvpZ">methodNotAllowed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -828,7 +828,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">methodNotAllowed</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">405</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">methodNotAllowed</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">405</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -838,9 +838,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV8conflictAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV8conflictAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/conflict" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV8conflictAEvZ">conflict</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV8conflictAEvpZ">conflict</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -855,7 +855,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">conflict</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">409</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">conflict</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">409</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -865,9 +865,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV19internalServerErrorAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV19internalServerErrorAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/internalServerError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV19internalServerErrorAEvZ">internalServerError</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV19internalServerErrorAEvpZ">internalServerError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -882,7 +882,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">internalServerError</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">internalServerError</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -892,9 +892,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV14notImplementedAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV14notImplementedAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/notImplemented" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV14notImplementedAEvZ">notImplemented</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV14notImplementedAEvpZ">notImplemented</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -909,7 +909,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notImplemented</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">501</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notImplemented</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">501</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -919,9 +919,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV14gatewayTimeoutAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV14gatewayTimeoutAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/gatewayTimeout" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV14gatewayTimeoutAEvZ">gatewayTimeout</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV14gatewayTimeoutAEvpZ">gatewayTimeout</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -936,7 +936,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gatewayTimeout</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">504</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gatewayTimeout</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">504</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -946,9 +946,9 @@ print(PaperSize(rawValue: "Tabloid"))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK4HttpO10StatusCodeV12notSupportedAEvZ"></a>
+                    <a name="/s:9PredixSDK4HttpO10StatusCodeV12notSupportedAEvpZ"></a>
                     <a name="//apple_ref/swift/Variable/notSupported" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV12notSupportedAEvZ">notSupported</a>
+                    <a class="token" href="#/s:9PredixSDK4HttpO10StatusCodeV12notSupportedAEvpZ">notSupported</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -963,7 +963,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notSupported</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">505</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">notSupported</span> <span class="o">=</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">(</span><span class="mi">505</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -997,7 +997,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="kt">RawValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="kt">RawValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1058,7 +1058,7 @@ print(PaperSize(rawValue: "Tabloid"))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="kt">RawValue</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="kt">RawValue</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1104,8 +1104,8 @@ print(PaperSize(rawValue: "Tabloid"))
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

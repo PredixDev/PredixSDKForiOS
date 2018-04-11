@@ -184,13 +184,13 @@
             <a class="nav-group-name-link" href="Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:9PredixSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
@@ -460,7 +460,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span></code></pre>
 
                         </div>
                       </div>
@@ -494,7 +494,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DocumentChangedDetails</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DocumentChangedDetails</span></code></pre>
 
                         </div>
                       </div>
@@ -526,7 +526,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
 
                         </div>
                       </div>
@@ -554,7 +554,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
 
                         </div>
                       </div>
@@ -586,7 +586,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagAggregation</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagAggregation</span></code></pre>
 
                         </div>
                       </div>
@@ -617,11 +617,11 @@
 <p><strong>groupCount:</strong> Defines the maximum number of groups to return.  For example if you set the rangeSize to 1 hour and you set the groupCount to 24 than you would get 24 groups each with an hours worth of data points</p>
 
 <p>Example of grouping by quality:</p>
-<pre class="highlight plaintext"><code>   let group = TagGroup
-   group.name = "quality"
-   group.rangeSize = 4
-   group.groupCount = 4
-   ...
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">TagGroup</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"quality"</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">rangeSize</span> <span class="o">=</span> <span class="mi">4</span>
+   <span class="n">group</span><span class="o">.</span><span class="n">groupCount</span> <span class="o">=</span> <span class="mi">4</span>
+   <span class="o">...</span>
 </code></pre>
 
 <p>The above example would give you 4 groups of quality (Bad, Uncertain, Not Acceptable and Good).  The first group would contain all quality values for bad data points, the second group would contain all the data points for uncertain data points and so on.</p>
@@ -632,7 +632,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagGroup</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagGroup</span></code></pre>
 
                         </div>
                       </div>
@@ -659,9 +659,9 @@
 <p>Queries can combined multiple elements or by using a single one.  For example a TagQuery could specify a grouping with an aggregation and limit of how many data points to return or it would simply be a single item like limit to the last two data points.</p>
 
 <p>Example of a query that would return tags grouped by their quality level and limited to the last 3 values</p>
-<pre class="highlight plaintext"><code>   let tagGroup = TagGroup(name: "quality")
-   let tagQuery = TagQuery(name: "sensorTag", group: tagGroup, limit: 3)
-   ...
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">tagGroup</span> <span class="o">=</span> <span class="kt">TagGroup</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"quality"</span><span class="p">)</span>
+   <span class="k">let</span> <span class="nv">tagQuery</span> <span class="o">=</span> <span class="kt">TagQuery</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"sensorTag"</span><span class="p">,</span> <span class="nv">group</span><span class="p">:</span> <span class="n">tagGroup</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>
+   <span class="o">...</span>
 </code></pre>
 
                         <a href="Structs/TagQuery.html" class="slightly-smaller">See more</a>
@@ -670,7 +670,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagQuery</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagQuery</span></code></pre>
 
                         </div>
                       </div>
@@ -698,7 +698,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPoint</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPoint</span></code></pre>
 
                         </div>
                       </div>
@@ -726,7 +726,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResultGroup</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResultGroup</span></code></pre>
 
                         </div>
                       </div>
@@ -756,7 +756,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPointValue</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPointValue</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -786,7 +786,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPointResult</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagDataPointResult</span></code></pre>
 
                         </div>
                       </div>
@@ -818,7 +818,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span><span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span><span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
                       </div>
@@ -850,7 +850,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixSyncServerInformation</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixSyncServerInformation</span></code></pre>
 
                         </div>
                       </div>
@@ -882,7 +882,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationManagerConfiguration</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationManagerConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -914,7 +914,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeSeriesManagerConfiguration</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeSeriesManagerConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -946,7 +946,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssetManagerConfiguration</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssetManagerConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -978,7 +978,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ErrorCodes</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ErrorCodes</span></code></pre>
 
                         </div>
                       </div>
@@ -1010,7 +1010,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AggregationSampling</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AggregationSampling</span></code></pre>
 
                         </div>
                       </div>
@@ -1035,15 +1035,15 @@
 <p>TimeRange can work with partial and close ranges</p>
 
 <p>An example of a closed range would be requesting all times from 0 to 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(0...2)
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">timeRange</span> <span class="o">=</span> <span class="kt">TimeRange</span><span class="p">(</span><span class="mi">0</span><span class="o">...</span><span class="mi">2</span><span class="p">)</span>
 </code></pre>
 
 <p>An example of a partialRange would be asking for everything up to 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(...2)
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">timeRange</span> <span class="o">=</span> <span class="kt">TimeRange</span><span class="p">(</span><span class="o">...</span><span class="mi">2</span><span class="p">)</span>
 </code></pre>
 
 <p>or anything from 2</p>
-<pre class="highlight plaintext"><code>   let timeRange = TimeRange(2...)
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">timeRange</span> <span class="o">=</span> <span class="kt">TimeRange</span><span class="p">(</span><span class="mi">2</span><span class="o">...</span><span class="p">)</span>
 </code></pre>
 
                         <a href="Structs/TimeRange.html" class="slightly-smaller">See more</a>
@@ -1052,7 +1052,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeRange</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeRange</span></code></pre>
 
                         </div>
                       </div>
@@ -1077,7 +1077,7 @@
 <p>The DataPointRequest allows you to setup a request that can be used to fetch the datapoints for a set of tags and tag attributes.</p>
 
 <p><strong>Basic Usage:</strong></p>
-<pre class="highlight plaintext"><code>   let dataPointRequest = DataPointRequest(["sensorTag1"])
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">dataPointRequest</span> <span class="o">=</span> <span class="kt">DataPointRequest</span><span class="p">([</span><span class="s">"sensorTag1"</span><span class="p">])</span>
 </code></pre>
 
 <p>In this example a request would be created that when fetched would return all data points for <em>sensorTag1</em></p>
@@ -1088,7 +1088,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPointRequest</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPointRequest</span></code></pre>
 
                         </div>
                       </div>
@@ -1118,7 +1118,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LatestDataPointRequest</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LatestDataPointRequest</span></code></pre>
 
                         </div>
                       </div>
@@ -1146,7 +1146,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Stats</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Stats</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -1174,7 +1174,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPointResponse</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPointResponse</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -1206,7 +1206,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssetQuery</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssetQuery</span></code></pre>
 
                         </div>
                       </div>
@@ -1234,7 +1234,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Asset</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Asset</span></code></pre>
 
                         </div>
                       </div>
@@ -1266,7 +1266,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixUAAAccessToken</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixUAAAccessToken</span></code></pre>
 
                         </div>
                       </div>
@@ -1281,8 +1281,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-03-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
