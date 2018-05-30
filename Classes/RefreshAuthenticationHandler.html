@@ -75,19 +75,19 @@
                 <a class="nav-group-task-link" href="../Classes/Database.html">Database</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/Configuration.html">– Configuration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/OpenDatabaseConfiguration.html">– OpenDatabaseConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/ReplicationConfiguration.html">– ReplicationConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Document.html">Document</a>
@@ -320,6 +320,9 @@
                 <a class="nav-group-task-link" href="../Protocols/ReplicationFilterDelegate.html">ReplicationFilterDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationSource.html">ReplicationSource</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ReplicationStatusDelegate.html">ReplicationStatusDelegate</a>
               </li>
             </ul>
@@ -433,7 +436,7 @@
             <h1>RefreshAuthenticationHandler</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a></span><span class="p">,</span> <span class="kt">CallAuthenticationServiceProtocol</span></code></pre>
 
                 </div>
               </div>
@@ -1052,13 +1055,51 @@ or could modify the actual work of the refresh authentication, in which case the
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CallAuthenticationServiceProtocol%20methods"></a>
+                <a name="//apple_ref/swift/Section/CallAuthenticationServiceProtocol methods" class="dashAnchor"></a>
+                <a href="#/CallAuthenticationServiceProtocol%20methods">
+                  <h3 class="section-name">CallAuthenticationServiceProtocol methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK28RefreshAuthenticationHandlerC13createSessionSo10URLSessionCyF"></a>
+                    <a name="//apple_ref/swift/Method/createSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK28RefreshAuthenticationHandlerC13createSessionSo10URLSessionCyF">createSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates the URLSession used during login and logout calls</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">createSession</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URLSession</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-30)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -75,19 +75,19 @@
                 <a class="nav-group-task-link" href="../Classes/Database.html">Database</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/Configuration.html">– Configuration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/OpenDatabaseConfiguration.html">– OpenDatabaseConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/ReplicationConfiguration.html">– ReplicationConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Document.html">Document</a>
@@ -318,6 +318,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ReplicationFilterDelegate.html">ReplicationFilterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationSource.html">ReplicationSource</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ReplicationStatusDelegate.html">ReplicationStatusDelegate</a>
@@ -869,6 +872,34 @@ Does nothing if no database with the provided name exists.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:9PredixSDK8DatabaseC12UpdateResultO"></a>
+                    <a name="//apple_ref/swift/Enum/UpdateResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DatabaseC12UpdateResultO">UpdateResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result enumeration for Database update operations</p>
+
+                        <a href="../Classes/Database/UpdateResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">UpdateResult</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:9PredixSDK8DatabaseC13ConfigurationC"></a>
                     <a name="//apple_ref/swift/Class/Configuration" class="dashAnchor"></a>
                     <a class="token" href="#/s:9PredixSDK8DatabaseC13ConfigurationC">Configuration</a>
@@ -918,6 +949,34 @@ Does nothing if no database with the provided name exists.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OpenDatabaseConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Classes/Database/Configuration.html">Configuration</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK8DatabaseC24ReplicationConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/ReplicationConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DatabaseC24ReplicationConfigurationV">ReplicationConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure defining a Replication Configuration, to establish data syncing between an on-device database and a Predix Sync offline database service instance.</p>
+
+                        <a href="../Classes/Database/ReplicationConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplicationConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ReplicationDetails.html">ReplicationDetails</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1265,34 +1324,6 @@ Does nothing if no database with the provided name exists.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8DatabaseC24ReplicationConfigurationV"></a>
-                    <a name="//apple_ref/swift/Struct/ReplicationConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8DatabaseC24ReplicationConfigurationV">ReplicationConfiguration</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Structure defining a Replication Configuration, to establish data syncing between an on-device database and a Predix Sync offline database service instance.</p>
-
-                        <a href="../Classes/Database/ReplicationConfiguration.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplicationConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ReplicationDetails.html">ReplicationDetails</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:9PredixSDK8DatabaseC16startReplicationyAC0E13ConfigurationV4with_tF"></a>
                     <a name="//apple_ref/swift/Method/startReplication(with:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:9PredixSDK8DatabaseC16startReplicationyAC0E13ConfigurationV4with_tF">startReplication(with:)</a>
@@ -1395,16 +1426,12 @@ Does nothing if no replication is currently configured for this Database.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9PredixSDK8DatabaseC12UpdateResultO"></a>
-                    <a name="//apple_ref/swift/Enum/UpdateResult" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9PredixSDK8DatabaseC12UpdateResultO">UpdateResult</a>
+                    <a name="/s:9PredixSDK8DatabaseC19downloadAttachmentsyAA8DocumentC3for_AA17ReplicationSource_p4withyAC12UpdateResultOy_AFGc17completionHandlertF"></a>
+                    <a name="//apple_ref/swift/Method/downloadAttachments(for:with:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DatabaseC19downloadAttachmentsyAA8DocumentC3for_AA17ReplicationSource_p4withyAC12UpdateResultOy_AFGc17completionHandlertF">downloadAttachments(for:with:completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1412,15 +1439,104 @@ Does nothing if no replication is currently configured for this Database.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Result enumeration for Database update operations</p>
+                        <p>Downloads attachments for documents that were sync&rsquo;d without their attachments (<code>downloadsAttachments</code> was false)</p>
 
-                        <a href="../Classes/Database/UpdateResult.html" class="slightly-smaller">See more</a>
+<p>If called on a document that already has it&rsquo;s attachment data, the attachment will not be redownloaded.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">UpdateResult</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">downloadAttachments</span><span class="p">(</span><span class="k">for</span> <span class="nv">document</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html">Document</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ReplicationSource.html">ReplicationSource</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/Database/UpdateResult.html">UpdateResult</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Document.html">Document</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>document</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Document to for which to download attachments</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ReplicationSource from which to retrieve the attachments.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure that will be called when all the attachments for the provided Document have been retrieved.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/Database/UpdateResult.html">UpdateResult</a></code> of the operation containing the updated Document, with it&rsquo;s attachments if successful, or if unsuccessful an Error describing the failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK8DatabaseC18totalDocumentCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/totalDocumentCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DatabaseC18totalDocumentCountSivp">totalDocumentCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the total number of documents currently stored in the local database.</p>
+
+<p>If the number of documents is greater than Int.max, will return Int.max</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalDocumentCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -1929,7 +2045,7 @@ Does nothing if no replication is currently configured for this Database.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-30)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

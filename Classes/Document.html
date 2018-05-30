@@ -75,19 +75,19 @@
                 <a class="nav-group-task-link" href="../Classes/Database.html">Database</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/Configuration.html">– Configuration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/OpenDatabaseConfiguration.html">– OpenDatabaseConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Database/ReplicationConfiguration.html">– ReplicationConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Database/UpdateResult.html">– UpdateResult</a>
+                <a class="nav-group-task-link" href="../Classes/Database/Index.html">– Index</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Document.html">Document</a>
@@ -318,6 +318,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ReplicationFilterDelegate.html">ReplicationFilterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReplicationSource.html">ReplicationSource</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ReplicationStatusDelegate.html">ReplicationStatusDelegate</a>
@@ -926,7 +929,7 @@ If nil, an <code>ISO8601DateFormatter</code> will be used.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html#/s:9PredixSDK8DocumentC14DictionaryTypea">DictionaryType</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="kt"><a href="../Classes/Document.html#/s:9PredixSDK8DocumentC14DictionaryTypea">DictionaryType</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1325,6 +1328,50 @@ otherwise, <code>nil</code>.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:9PredixSDK8DocumentC17dictionaryLiterals10DictionaryVySSypGSaySS_yptG8elements_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/dictionaryLiteral(elements:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DocumentC17dictionaryLiterals10DictionaryVySSypGSaySS_yptG8elements_tFZ">dictionaryLiteral(elements:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper function to use in implementing the required dictionaryLiteral initializer in subclasses</p>
+
+<p><strong>Example:</strong></p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="nv">mySubclass</span><span class="p">:</span> <span class="kt">Document</span> <span class="p">{</span>
+
+    <span class="kd">required</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+         <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="kt">Document</span><span class="o">.</span><span class="kt">DictionaryType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">required</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">dictionaryLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">(</span><span class="kt">Document</span><span class="o">.</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Document</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">...</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="kt">Document</span><span class="o">.</span><span class="nf">dictionaryLiteral</span><span class="p">(</span><span class="nv">elements</span><span class="p">:</span> <span class="n">elements</span><span class="p">))</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">dictionaryLiteral</span><span class="p">(</span><span class="nv">elements</span><span class="p">:</span> <span class="p">[(</span><span class="kt"><a href="../Classes/Document.html#/s:s30ExpressibleByDictionaryLiteralP3Key">Key</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/Document.html#/s:s30ExpressibleByDictionaryLiteralP5Value">Value</a></span><span class="p">)])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Document.html#/s:9PredixSDK8DocumentC14DictionaryTypea">DictionaryType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:9PredixSDK8DocumentC6toJSON10Foundation4DataVSgyF"></a>
                     <a name="//apple_ref/swift/Method/toJSON()" class="dashAnchor"></a>
                     <a class="token" href="#/s:9PredixSDK8DocumentC6toJSON10Foundation4DataVSgyF">toJSON()</a>
@@ -1343,6 +1390,43 @@ otherwise, <code>nil</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">toJSON</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK8DocumentC10asSubclassxyACRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/asSubclass()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK8DocumentC10asSubclassxyACRbzlF">asSubclass()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current Document as the provided type subclass of a Document.</p>
+
+<p>Returned object is a copy, no reference to the original Document object is retained.</p>
+
+<p><strong>Example:</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doc</span> <span class="o">=</span> <span class="kt">Document</span><span class="p">([</span><span class="s">"id"</span><span class="p">:</span> <span class="s">"abc123"</span><span class="p">,</span> <span class="s">"foo"</span><span class="p">:</span> <span class="s">"bar"</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">subclass</span><span class="p">:</span> <span class="kt">DocumentSubclass</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="nf">asSubclass</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"id: </span><span class="se">\(</span><span class="n">subclass</span><span class="o">.</span><span class="n">id</span><span class="se">)</span><span class="s">"</span> <span class="c1">// prints "id: abc123"</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"foo: </span><span class="se">\(</span><span class="n">subclass</span><span class="p">[</span><span class="s">"foo"</span><span class="p">]</span><span class="se">)</span><span class="s">"</span> <span class="c1">// prints "foo: bar"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">asSubclass</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Document</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
 
                         </div>
                       </div>
@@ -1479,7 +1563,7 @@ otherwise, <code>nil</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-04-10)</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-30)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
