@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>URLSession Extension Reference</title>
+    <title>PushNotificationRegistation Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/URLSession" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PushNotificationRegistation" class="dashAnchor"></a>
 
-    <a title="URLSession Extension Reference"></a>
+    <a title="PushNotificationRegistation Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">PredixSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      URLSession Extension Reference
+      PushNotificationRegistation Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -436,17 +436,20 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>URLSession</h1>
-            <p>An extension to the URLSession class to allow simplified access to Predix hosted services</p>
+            <h1>PushNotificationRegistation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PushNotificationRegistation</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
 
-<p>The URLSession extension handles the automatic population of the UAA authorization token, tracer IDs and other standard Predix access headers</p>
+                </div>
+              </div>
+            <p>Handles registering device for push notifications on the Predix Push Notification service</p>
 
-<p>Authentication and TraceId headers are only replaced if they are not present when the creation of the task occurs.  This allows a developer to override the header
-values that are passed on request to a Predix service without having to provide all other headers manually</p>
+<p>Example usage:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pushRegistration</span> <span class="o">=</span> <span class="kt">PushNotificationRegistation</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="n">deviceToken</span><span class="p">,</span> <span class="nv">userName</span><span class="p">:</span> <span class="n">userName</span><span class="p">)</span>
 
-<p>Authentication header information is not preserved between application sessions, once the application has been removed from the background by iOS you will need
-to re-authenticate with UAA to obtain a new active session.  Pease consult the Apple documentation on the NSURLSessionDelegate for more information on how you can respond
-to an authentication challenge if required by the applications programming flow</p>
+<span class="n">pushRegistration</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">pushServiceURL</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">myApplicationKey</span><span class="p">)</span>
+</code></pre>
 
           </div>
         </section>
@@ -458,9 +461,9 @@ to an authentication challenge if required by the applications programming flow<
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So12NSURLSessionC9PredixSDKE6predixABvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/predix" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So12NSURLSessionC9PredixSDKE6predixABvpZ">predix</a>
+                    <a name="/s:9PredixSDK27PushNotificationRegistationV5tokenSSvp"></a>
+                    <a name="//apple_ref/swift/Property/token" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK27PushNotificationRegistationV5tokenSSvp">token</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -468,22 +471,140 @@ to an authentication challenge if required by the applications programming flow<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new URLSession pre-configured with the URLSessionConfiguration.predix configuration</p>
-
-<p>The URLSessionConfiguration.predix configuration will auto populate required request header for accessing data via Predix hosted applications and services</p>
+                        <p>Device Push Notification token, obtained from: <code>application(_: , didRegisterForRemoteNotificationsWithDeviceToken:)</code></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">predix</span><span class="p">:</span> <span class="kt">URLSession</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK27PushNotificationRegistationV6userIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/userId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK27PushNotificationRegistationV6userIdSSvp">userId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logged in User&rsquo;s name/id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK27PushNotificationRegistationV15applicationInfoSDyS2SGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/applicationInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK27PushNotificationRegistationV15applicationInfoSDyS2SGSgvp">applicationInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional application-specific data to send to the Push Notification registration service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">applicationInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9PredixSDK27PushNotificationRegistationV5token8userName15applicationInfoAC10Foundation4DataV_SSSDyS2SGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(token:userName:applicationInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9PredixSDK27PushNotificationRegistationV5token8userName15applicationInfoAC10Foundation4DataV_SSSDyS2SGSgtcfc">init(token:userName:applicationInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new PushNotificationRegistation structure, for registering this device and user with Push Notifications</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">userName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">applicationInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div>
-                        <h4>Return Value</h4>
-                        <p>A Predix configured URLSession</p>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Push Notification registration token from the device. See <code>application(_: didRegisterForRemoteNotificationsWithDeviceToken:)</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Logged in User&rsquo;s name or id</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>applicationInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional dictionary of additional application-specific name/value pairs to send to the Push Notification Registration Service.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
