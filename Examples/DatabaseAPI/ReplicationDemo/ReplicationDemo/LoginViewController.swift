@@ -158,7 +158,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let fruitListController = segue.destination.childViewControllers.first as? FruitListViewController else {
+        guard let fruitListController = segue.destination.children.first as? FruitListViewController else {
             return
         }
         

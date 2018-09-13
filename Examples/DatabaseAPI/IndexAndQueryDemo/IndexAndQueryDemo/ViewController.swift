@@ -72,7 +72,7 @@ class ViewController: UITableViewController {
             if results.count == 0 {
                 // No results means the inital database for this demo has not been created, so sample data will now be created.
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Please wait...", message: "Creating sample documents", preferredStyle: UIAlertControllerStyle.alert)
+                    let alert = UIAlertController(title: "Please wait...", message: "Creating sample documents", preferredStyle: UIAlertController.Style.alert)
                     self.present(alert, animated: true, completion: {
                         self.createSampleDocuments()
                     })

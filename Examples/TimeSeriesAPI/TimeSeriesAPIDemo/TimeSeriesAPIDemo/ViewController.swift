@@ -12,11 +12,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //Create a Time Sereies configuration that contains the details about the Time Series instance we are tageting.
-        var config: TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration()
+        var config: TimeSeriesManagerConfiguration = TimeSeriesManagerConfiguration(predixZoneId: "e52ee381-897a-4313-80da-6ca2f0a17bd4")
         //The host for the Time Series Service
-        config.hostUrl = "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io"
-        //The Zone ID for the Time Series Service
-        config.predixZoneId = "e52ee381-897a-4313-80da-6ca2f0a17bd4"
+        config.timeSeriesServiceURL = URL(string: "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io")!
 
         //Create a Time Series Manager that will be used to fetch Time Series data.
         self.timeSeriesManager = TimeSeriesManager(configuration: config)

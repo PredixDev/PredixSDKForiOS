@@ -131,6 +131,7 @@
 				TargetAttributes = {
 					E88199641FDF3EB100F51682 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -318,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.OnlineAPIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -334,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.OnlineAPIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
